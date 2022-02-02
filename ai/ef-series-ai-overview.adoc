@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: ai/ef-series-ai-overview.html
 keywords: EF-Series AI, converged infrastructure, AI, ML, DL, artificial intelligence, machine learning, deep learning, HPC, high performance computing
-summary:
+summary: Overview of EF-Series AI converged infrastructure solutions from NetApp and NVIDIA.
 ---
 
 = NetApp EF-Series AI with NVIDIA

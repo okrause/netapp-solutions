@@ -44,7 +44,7 @@ indexpage:
           url: aicp_introduction.html
         - title: MLRun Pipeline with Iguazio
           url: mlrun_introduction.html
-        - title: "NetApp Orchestration Solution with Run:AI"
+        - title: "NetApp Orchestration Solution with Run AI"
           url: osrunai_solution_overview.html
 #
     - title: Use Cases

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: ai/ontap-ai-overview.html
 keywords: ONTAP AI, converged infrastructure, AI, ML, DL, artificial intelligence, machine learning, deep learning
-summary:
+summary: Overview of ONTAP AI converged infrastructure solutions from NetApp and NVIDIA.
 ---
 
 = NetApp ONTAP AI with NVIDIA
