@@ -4077,7 +4077,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-22 07:53:57 +0000">02/22/2022</time>
+    <time datetime="2022-03-01 19:40:17 +0000">03/01/2022</time>
     
   
 
@@ -4222,10 +4222,15 @@ Docker installations must have docker version greater than 20.10 and Podman inst
 <div class="sect1">
 <h2 id="install-astra-control-center">Install Astra Control Center</h2>
 <div class="sectionbody">
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Using OperatorHub</div>
+<div class="content">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Log into the NetApp Support Site and download the latest version of NetApp Astra Control Center. TO do so requires a license attached to your NetApp account. After you download the tarball, transfer it to the admin workstation.</p>
+<p>Log into the NetApp Support Site and download the latest version of NetApp Astra Control Center. To do so requires a license attached to your NetApp account. After you download the tarball, transfer it to the admin workstation.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -4243,34 +4248,17 @@ To get started with a trial license for Astra Control, visit the <a href="https:
 <p>Unpack the tar ball and change the working directory to the resulting folder.</p>
 <div class="listingblock">
 <div class="content">
-<pre>[netapp-user@rhel7 ~]$ tar -vxzf astra-control-center-21.08.65.tar.gz
-[netapp-user@rhel7 ~]$ cd astra-control-center-21.08.65</pre>
+<pre>[netapp-user@rhel7 ~]$ tar -vxzf astra-control-center-21.12.60.tar.gz
+[netapp-user@rhel7 ~]$ cd astra-control-center-21.12.60</pre>
 </div>
 </div>
 </li>
 <li>
-<p>Before starting the installation, push the Astra Control Center images to an image registry.</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
-</td>
-<td class="content">
-You can choose to do this with either Docker or Podman; instructions for both are provided in this step.
-</td>
-</tr>
-</table>
-</div>
-</li>
-</ol>
-</div>
-<div class="exampleblock tabbed-block">
-<div class="content">
-<div class="openblock">
-<div class="title">podman</div>
+<p>Before starting the installation, push the Astra Control Center images to an image registry. You can choose to do this with either Docker or Podman, instructions for both are provided in this step.</p>
+<div class="exampleblock">
 <div class="content">
 <div class="olist loweralpha">
+<div class="title">Podman</div>
 <ol class="loweralpha" type="a">
 <li>
 <p>Export the registry FQDN with the organization/namespace/project name as a environment variable ‘registry’.</p>
@@ -4318,10 +4306,14 @@ Alternatively, you can create a service account, assign registry-editor and/or r
 <div class="content">
 <pre>[netapp-user@rhel7 ~]$ vi push-images-to-registry.sh
 
-for astraImageFile in $(ls images/*.tar); do
-   astraImage=$(podman load --input ${astraImageFile} | sed 's/Loaded image(s): //')
-   podman tag $astraImage $registry/$(echo $astraImage | sed 's/^[^\/]\+\///')
-   podman push $registry/$(echo $astraImage | sed 's/^[^\/]\+\///')
+for astraImageFile in $(ls images/*.tar) ; do
+  # Load to local cache. And store the name of the loaded image trimming the 'Loaded images: '
+  astraImage=$(podman load --input ${astraImageFile} | sed 's/Loaded image(s): //')
+  astraImage=$(echo ${astraImage} | sed 's!localhost/!!')
+  # Tag with local image repo.
+  podman tag ${astraImage} ${REGISTRY}/${astraImage}
+  # Push to the local repo.
+  podman push ${REGISTRY}/${astraImage}
 done</pre>
 </div>
 </div>
@@ -4358,10 +4350,10 @@ If you are using untrusted certificates for your registry, edit the shell script
 </div>
 </div>
 </div>
-<div class="openblock">
-<div class="title">docker</div>
+<div class="exampleblock">
 <div class="content">
 <div class="olist loweralpha">
+<div class="title">Docker</div>
 <ol class="loweralpha" type="a">
 <li>
 <p>Export the registry FQDN with the organization/namespace/project name as a environment variable ‘registry’.</p>
@@ -4409,10 +4401,14 @@ Alternatively, you can create a service account, assign registry-editor and/or r
 <div class="content">
 <pre>[netapp-user@rhel7 ~]$ vi push-images-to-registry.sh
 
-for astraImageFile in $(ls images/*.tar); do
-   astraImage=$(docker load --input ${astraImageFile} | sed 's/Loaded image: //')
-   docker tag $astraImage $registry/$(echo $astraImage | sed 's/^[^\/]\+\///')
-   docker push $registry/$(echo $astraImage | sed 's/^[^\/]\+\///')
+for astraImageFile in $(ls images/*.tar) ; do
+  # Load to local cache. And store the name of the loaded image trimming the 'Loaded images: '
+  astraImage=$(docker load --input ${astraImageFile} | sed 's/Loaded image: //')
+  astraImage=$(echo ${astraImage} | sed 's!localhost/!!')
+  # Tag with local image repo.
+  docker tag ${astraImage} ${REGISTRY}/${astraImage}
+  # Push to the local repo.
+  docker push ${REGISTRY}/${astraImage}
 done</pre>
 </div>
 </div>
@@ -4437,12 +4433,13 @@ done</pre>
 </div>
 </div>
 </div>
-</div>
+</li>
+</ol>
 </div>
 <div class="olist arabic">
 <ol class="arabic" start="4">
 <li>
-<p>Next, upload the image registry TLS certificates to the OpenShift nodes. To do so, create a configmap in the openshift-config namespace using the TLS certificates and patch it to the cluster image config to make the certificate trusted.</p>
+<p>When using private image registries that are not publicly trusted, upload the image registry TLS certificates to the OpenShift nodes. To do so, create a configmap in the openshift-config namespace using the TLS certificates and patch it to the cluster image config to make the certificate trusted.</p>
 <div class="listingblock">
 <div class="content">
 <pre>[netapp-user@rhel7 ~]$ oc create configmap default-ingress-ca -n openshift-config --from-file=astra-registry.apps.ocp-vmw.cie.netapp.com=tls.crt
@@ -4464,10 +4461,12 @@ If you are using an OpenShift internal registry with default TLS certificates fr
 </div>
 </li>
 <li>
-<p>Create a namespace <code>netapp-acc-operator</code> for installing the Astra Control Center Operator.</p>
+<p>Create a namespace <code>netapp-acc-operator</code> for Astra Control Center.</p>
 <div class="listingblock">
 <div class="content">
-<pre>[netapp-user@rhel7 ~]$ oc create ns netapp-acc-operator</pre>
+<pre>[netapp-user@rhel7 ~]$ oc create ns netapp-acc-operator
+
+namespace/netapp-acc-operator created</pre>
 </div>
 </div>
 </li>
@@ -4476,147 +4475,137 @@ If you are using an OpenShift internal registry with default TLS certificates fr
 <div class="listingblock">
 <div class="content">
 <pre>[netapp-user@rhel7 ~]$ oc create secret docker-registry astra-registry-cred --docker-server=astra-registry.apps.ocp-vmw.cie.netapp.com --docker-username=ocp-user --docker-password=password -n netapp-acc-operator
-secret/astra-registry-cred created</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Edit the Astra Control Center Operator CR <code>astra_control_center_operator_deploy.yaml</code>, which is a set of all resources Astra Control Center deploys. In the operator CR, find the deployment definition for <code>acc-operator-controller-manager</code> and enter the FQDN for your registry along with the organization name as it was given while pushing the images to registry (in this example, <code>astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra</code>) by replacing the text <code>ASTRA_IMAGE_REGISTRY</code> and provide the name of the secret we just created in <code>imagePullSecrets</code> section. Verify other details of the operator, save, and close.</p>
-<div class="listingblock">
-<div class="content">
-<pre>[netapp-user@rhel7 ~]$ vim astra_control_center_operator_deploy.yaml
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  labels:
-    control-plane: controller-manager
-  name: acc-operator-controller-manager
-  namespace: netapp-acc-operator
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      control-plane: controller-manager
-  template:
-    metadata:
-      labels:
-        control-plane: controller-manager
-    spec:
-      containers:
-      - args:
-        - --secure-listen-address=0.0.0.0:8443
-        - --upstream=http://127.0.0.1:8080/
-        - --logtostderr=true
-        - --v=10
-        image: ASTRA_IMAGE_REGISTRY/kube-rbac-proxy:v0.5.0
-        name: kube-rbac-proxy
-        ports:
-        - containerPort: 8443
-          name: https
-      - args:
-        - --health-probe-bind-address=:8081
-        - --metrics-bind-address=127.0.0.1:8080
-        - --leader-elect
-        command:
-        - /manager
-        env:
-        - name: ACCOP_LOG_LEVEL
-          value: "2"
-        image: astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra/acc-operator:21.08.7
-        imagePullPolicy: IfNotPresent
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 8081
-          initialDelaySeconds: 15
-          periodSeconds: 20
-        name: manager
-        readinessProbe:
-          httpGet:
-            path: /readyz
-            port: 8081
-          initialDelaySeconds: 5
-          periodSeconds: 10
-        resources:
-          limits:
-            cpu: 300m
-            memory: 750Mi
-          requests:
-            cpu: 100m
-            memory: 75Mi
-        securityContext:
-          allowPrivilegeEscalation: false
-      imagePullSecrets: [name: astra-registry-cred]
-      securityContext:
-        runAsUser: 65532
-      terminationGracePeriodSeconds: 10</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Create the operator by running the following command.</p>
-<div class="listingblock">
-<div class="content">
-<pre>[netapp-user@rhel7 ~]$ oc create -f astra_control_center_operator_deploy.yaml</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Create a dedicated namespace for installing all the Astra Control Center resources.</p>
-<div class="listingblock">
-<div class="content">
-<pre>[netapp-user@rhel7 ~]$ oc create ns netapp-astra-cc
-namespace/netapp-astra-cc created</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Create the secret for accessing the image registry in that namespace.</p>
-<div class="listingblock">
-<div class="content">
-<pre>[netapp-user@rhel7 ~]$ oc create secret docker-registry astra-registry-cred --docker-server=astra-registry.apps.ocp-vmw.cie.netapp.com --docker-username=ocp-user --docker-password=password -n netapp-astra-cc
 
 secret/astra-registry-cred created</pre>
 </div>
 </div>
 </li>
 <li>
-<p>Edit the Astra Control Center CRD file <code>astra_control_center_min.yaml</code> and enter the FQDN, image registry details, administrator email address, and other details.</p>
-<div class="listingblock">
+<p>Log into the Red Hat OpenShift GUI console with cluster-admin access.</p>
+</li>
+<li>
+<p>Select Administrator from the Perspective drop down.</p>
+</li>
+<li>
+<p>Navigate to Operators &gt; OperatorHub and search for Astra.</p>
+<div class="imageblock">
 <div class="content">
-<pre>[netapp-user@rhel7 ~]$ vim astra_control_center_min.yaml
-
-apiVersion: astra.netapp.io/v1
-kind: AstraControlCenter
-metadata:
-  name: astra
-spec:
-  accountName: "NetApp HCG Solutions"
-  astraVersion: "21.08.65"
-  astraAddress: "astra-control-center.cie.netapp.com"
-  autoSupport:
-    enrolled: true
-  email: "solutions_tme@netapp.com"
-  firstName: "NetApp HCG"
-  lastName: "Admin"
-  imageRegistry:
-    name: "astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra"     # use your registry
-    secret: "astra-registry-cred"             # comment out if not needed</pre>
+<img src="./../media/redhat_openshift_image45.JPG" alt="OpenShift Operator Hub">
 </div>
 </div>
 </li>
 <li>
-<p>Create the Astra Control Center CRD in the namespace created for it.</p>
-<div class="listingblock">
+<p>Select <code>netapp-acc-operator</code> tile and click <code>Install</code>.</p>
+<div class="imageblock">
 <div class="content">
-<pre>[netapp-user@rhel7 ~]$ oc apply -f astra_control_center_min.yaml -n netapp-astra-cc
-astracontrolcenter.astra.netapp.io/astra created</pre>
+<img src="./../media/redhat_openshift_image123.jpg" alt="ACC operator tile">
+</div>
+</div>
+</li>
+<li>
+<p>On the Install Operator screen, accept all default parameters and click <code>Install</code>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="./../media/redhat_openshift_image124.jpg" alt="ACC operator details">
+</div>
+</div>
+</li>
+<li>
+<p>Wait for the operator installation to complete.</p>
+<div class="imageblock">
+<div class="content">
+<img src="./../media/redhat_openshift_image125.jpg" alt="ACC operator wait for install">
+</div>
+</div>
+</li>
+<li>
+<p>Once the operator installation succeeds, navigate to click on <code>View Operator</code>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="./../media/redhat_openshift_image126.jpg" alt="ACC operator install complete">
+</div>
+</div>
+</li>
+<li>
+<p>Then click on <code>Create Instance</code> in Astra Control Center tile in the operator.</p>
+<div class="imageblock">
+<div class="content">
+<img src="./../media/redhat_openshift_image127.jpg" alt="Create ACC instance">
+</div>
+</div>
+</li>
+<li>
+<p>Fill the <code>Create AstraControlCenter</code> form fields and click <code>Create</code>.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Optionally edit the Astra Control Center instance name.</p>
+</li>
+<li>
+<p>Optionally enable or disable Auto Support. Retaining Auto Support functionality is recommended.</p>
+</li>
+<li>
+<p>Enter the FQDN for Astra Control Center.</p>
+</li>
+<li>
+<p>Enter the Astra Control Center version; the latest is displayed by default.</p>
+</li>
+<li>
+<p>Enter an account name for Astra Control Center and admin details like first name, last name and email address.</p>
+</li>
+<li>
+<p>Enter the volume reclaim policy, default is Retain.</p>
+</li>
+<li>
+<p>In Image Registry, enter the FQDN for your registry along with the organization name as it was given while pushing the images to the registry (in this example, <code>astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra</code>)</p>
+</li>
+<li>
+<p>If you use a registry that requires authentication, enter the secret name in Image Registry section.</p>
+</li>
+<li>
+<p>Configure scaling options for Astra Control Center resource limits.</p>
+</li>
+<li>
+<p>Enter the storage class name if you want to place PVCs on a non-default storage class.</p>
+</li>
+<li>
+<p>Define CRD handling preferences.</p>
+<div class="imageblock">
+<div class="content">
+<img src="./../media/redhat_openshift_image128.jpg" alt="Create ACC instance">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./../media/redhat_openshift_image129.jpg" alt="Create ACC instance">
 </div>
 </div>
 </li>
 </ol>
 </div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Automated [Ansible]</div>
+<div class="content">
+<div class="paragraph">
+<p>21.12.60. For using the Ansible playbooks to deploy Astra Control Center, you will require a Ubuntu/RHEL machine with Ansible installed. Follow the procedure as described <a href="https://docs.netapp.com/us-en/netapp-solutions/automation/automation_ubuntu_debian_setup.html">here</a> for Ubuntu and in this <a href="https://docs.netapp.com/us-en/netapp-solutions/automation/automation_rhel_centos_setup.html">link</a> for RHEL.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Clone the GitHub repository that hosts the Ansible content.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">git clone https://github.com/NetApp-Automation/na_astra_control_suite.git</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Log into the NetApp Support Site and download the latest version of NetApp Astra Control Center. To do so requires a license attached to your NetApp account. After you download the tarball, transfer it to the workstation.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -4624,13 +4613,107 @@ astracontrolcenter.astra.netapp.io/astra created</pre>
 <img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
 </td>
 <td class="content">
-The previous file <code>astra_control_center_min.yaml</code> is the minimum version of the Astra Control Center CRD. If you want to create the CRD with more control, such as defining a storageclass other than the default for creating PVCs or providing SMTP details for mail notifications, you can edit the file <code>astra_control_center.yaml</code>, enter then needed details, and use it to create the CRD.
+To get started with a trial license for Astra Control, visit the <a href="https://cloud.netapp.com/astra-register" target="_blank" rel="noopener">Astra registration site</a>.
 </td>
 </tr>
 </table>
 </div>
+</li>
+<li>
+<p>Create or obtain a kubeconfig file with admin access to the OpenShift cluster on which Astra Control Center is to be installed.</p>
+</li>
+<li>
+<p>Change the directory to the na_astra_control_suite.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">cd na_astra_control_suite</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Edit the vars/vars.yml file and fill the variables with required information.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">#Define whether or not to push the Astra Control Center images to your private registry [Allowed values: yes, no]
+push_images: yes
+
+#The directory hosting the Astra Control Center installer
+installer_directory: /home/admin/
+
+#Name of the Astra Control Center installer (Do not include the extension, just the name)
+astra_tar_ball_name: astra-control-center-21.12.60
+
+#The complete path to the kubeconfig file of the kubernetes/openshift cluster Astra Control Center needs to be installed to.
+hosting_ocp_kubeconfig_path: /home/admin/ocp-kubeconfig
+
+#Namespace in which Astra Control Center is to be installed
+astra_namespace: netapp-astra-cc
+
+#Astra Control Center Resources Scaler. Leave it blank if you want to accept the Default setting.
+astra_resources_scaler: Default
+
+#Storageclass to be used for Astra Control Center PVCs, it must be created before running the playbook [Leave it blank if you want the PVCs to use default storageclass]
+astra_trident_storageclass: basic
+
+#Reclaim Policy for Astra Control Center Persistent Volumes [Allowed values: Retain, Delete]
+storageclass_reclaim_policy: Retain
+
+#Private Registry Details
+astra_registry_name: "docker.io"
+
+#Whether the private registry requires credentials [Allowed values: yes, no]
+require_reg_creds: yes
+
+#If require_reg_creds is yes, then define the container image registry credentials
+#Usually, the registry namespace and usernames are same for individual users
+astra_registry_namespace: "registry-user"
+astra_registry_username: "registry-user"
+astra_registry_password: "password"
+
+#Kuberenets/OpenShift secret name for Astra Control Center
+#This name will be assigned to the K8s secret created by the playbook
+astra_registry_secret_name: "astra-registry-credentials"
+
+#Astra Control Center FQDN
+acc_fqdn_address: astra-control-center-ui.cie.netapp.com
+
+#Name of the Astra Control Center instance
+acc_account_name: ACC Account Name
+
+#Administrator details for Astra Control Center
+admin_email_address: admin@example.com
+admin_first_name: Admin
+admin_last_name: Admin</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Run the playbook to deploy Astra Control Center. The playbook requires root privileges for certain configuration.</p>
+<div class="paragraph">
+<p>So if the user running the playbook is root or has passwordless sudo configured, then run the below command to run the playbook.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">ansible-playbook playbook.yml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the user has password-based sudo access configured, then run the below command to run the playbook and then enter the sudo password.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cli" data-lang="cli">ansible-playbook playbook.yml -K</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="installation-verification">Installation verification</h3>
+<h3 id="post-install-steps">Post Install Steps</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4662,7 +4745,7 @@ The following message indicates the successful installation of Astra Control Cen
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>{"level":"info","ts":1624054318.029971,"logger":"controllers.AstraControlCenter","msg":"Successfully Reconciled AstraControlCenter in [seconds]s","AstraControlCenter":"netapp-astra-cc/astra","ae.Version":"[21.08.65]"}</pre>
+<pre>{"level":"info","ts":1624054318.029971,"logger":"controllers.AstraControlCenter","msg":"Successfully Reconciled AstraControlCenter in [seconds]s","AstraControlCenter":"netapp-astra-cc/astra","ae.Version":"[21.12.60]"}</pre>
 </div>
 </div>
 </li>

@@ -4077,7 +4077,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-22 07:53:57 +0000">02/22/2022</time>
+    <time datetime="2022-03-01 19:40:17 +0000">03/01/2022</time>
     
   
 
@@ -4122,16 +4122,16 @@
 <li>
 <p>To take a snapshot of the application, navigate to the Apps &gt; Managed tab and click the application you would like to make a Snapshot copy of. Click the dropdown menu next to the application name and click Snapshot.</p>
 <div class="paragraph">
-<p><span class="image"><img src="./../media/redhat_openshift_image101.jpg" alt="Astra Control Center snapshot button"></span></p>
+<p><span class="image"><img src="./../media/redhat_openshift_image130.jpg" alt="Astra Control Center snapshot button"></span></p>
 </div>
 </li>
 <li>
-<p>Enter the snapshot details, click Review, and then click Snapshot. It takes about a minute to create the snapshot, and the status becomes Available after the snapshot is successfully created.</p>
+<p>Enter the snapshot details, click Next, and then click Snapshot. It takes about a minute to create the snapshot, and the status becomes Available after the snapshot is successfully created.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./../media/redhat_openshift_image102.jpg" alt="Astra Control Center create snapshot"></span></p>
+<p><span class="image"><img src="./../media/redhat_openshift_image131.jpg" alt="Astra Control Center create snapshot"></span></p>
 </div>
 </div>
 </div>
@@ -4155,46 +4155,82 @@ ONTAP::&gt; export-policy rule modify -policyname default -ruleindex 1 -anon 655
 <li>
 <p>To create a backup of the managed application in the Astra Control Center, navigate to the Apps &gt; Managed tab and click the application that you want to take a backup of. Click the dropdown menu next to the application name and click Backup.</p>
 <div class="paragraph">
-<p><span class="image"><img src="./../media/redhat_openshift_image103.jpg" alt="Astra Control Center backup button"></span></p>
+<p><span class="image"><img src="./../media/redhat_openshift_image132.jpg" alt="Astra Control Center backup button"></span></p>
 </div>
 </li>
 <li>
-<p>Enter the backup details, select the object storage bucket to hold the backup files, click Review, and, after reviewing the details, click Backup. Depending on the size of the application and data, the backup can take several minutes, and the status of the backup becomes Available after the backup is completed successfully.</p>
+<p>Enter the backup details, select the object storage bucket to hold the backup files, click Next, and, after reviewing the details, click Backup. Depending on the size of the application and data, the backup can take several minutes, and the status of the backup becomes Available after the backup is completed successfully.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./../media/redhat_openshift_image104.jpg" alt="Astra Control Center create backup"></span></p>
+<p><span class="image"><img src="./../media/redhat_openshift_image133.jpg" alt="Astra Control Center create backup"></span></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="restoring-or-cloning-an-application">Restoring or cloning an application</h2>
+<h2 id="restoring-an-application">Restoring an application</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>At the push of a button, you can restore an application to the originating cluster or clone it to a remote cluster for dev/test or application protection and disaster recovery purposes.</p>
+<p>At the push of a button, you can restore an application to the originating namespace in the same cluster or to a remote cluster for application protection and disaster recovery purposes.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>To restore or clone an application, navigate to the Apps &gt; Managed tab and click the app in question. Click the dropdown menu next to the application name and click Clone.</p>
+<p>To restore an application, navigate to Apps &gt; Managed tab and click the app in question. Click the dropdown menu next to the application name and click <code>Restore</code>.</p>
 <div class="paragraph">
-<p><span class="image"><img src="./../media/redhat_openshift_image105.jpg" alt="Astra Control Center clone button"></span></p>
+<p><span class="image"><img src="./../media/redhat_openshift_image134.jpg" alt="Astra Control Center clone button"></span></p>
 </div>
 </li>
 <li>
-<p>Enter the details of the new namespace, select the cluster you want to restore or clone it to, and choose if you want to restore or clone it from an existing snapshot or from a backup of the current state of the application. Then click Review and click Clone after you have reviewed the details.</p>
+<p>Enter the name of the restore namespace, select the cluster you want to restore it to, and choose if you want to restore it from an existing snapshot or from a backup of the application. Click Next.</p>
 <div class="paragraph">
-<p><span class="image"><img src="./../media/redhat_openshift_image106.jpg" alt="Astra Control Center restore"></span></p>
+<p><span class="image"><img src="./../media/redhat_openshift_image135.jpg" alt="Astra Control Center restore"></span></p>
 </div>
 </li>
 <li>
-<p>The new application goes to the Discovering state while Astra Control Center creates the application on the selected cluster. After all the resources of the application are installed and detected by Astra, the application goes to the Available state.</p>
+<p>On the review pane, enter <code>restore</code> and click Restore after you have reviewed the details.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/redhat_openshift_image136.jpg" alt="Astra Control Center restore review"></span></p>
+</div>
+</li>
+<li>
+<p>The new application goes to the Restoring state while Astra Control Center restores the application on the selected cluster. After all the resources of the application are installed and detected by Astra, the application goes to the Available state.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./../media/redhat_openshift_image107.jpg" alt="Astra Control Center new app discovered"></span></p>
+<p><span class="image"><img src="./../media/redhat_openshift_image137.jpg" alt="Astra Control Center new app discovered"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloning-an-application">Cloning an application</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can clone an application to the originating cluster or to a remote cluster for dev/test or application protection and disaster recovery purposes. Cloning an application within the same cluster on the same storage backend uses NetApp FlexClone technology, which clones the PVCs instantly and saves storage space.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To clone an application, navigate to the Apps &gt; Managed tab and click the app in question. Click the dropdown menu next to the application name and click Clone.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/redhat_openshift_image138.jpg" alt="Astra Control Center clone button"></span></p>
+</div>
+</li>
+<li>
+<p>Enter the details of the new namespace, select the cluster you want to clone it to, and choose if you want to clone it from an existing snapshot or a backup or the current state of the application. Then click Next and click Clone on review pane once you have reviewed the details.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/redhat_openshift_image139.jpg" alt="Astra Control Center restore"></span></p>
+</div>
+</li>
+<li>
+<p>The new application goes to the Discovering state while Astra Control Center creates the application on the selected cluster. After all the resources of the application are installed and detected by Astra, the application goes to the Available state.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/redhat_openshift_image140.jpg" alt="Astra Control Center new app discovered"></span></p>
+</div>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p><a href="rh-os-n_use_cases.html">Next: Solution Validation/Use Cases.</a></p>
