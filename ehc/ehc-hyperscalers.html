@@ -3469,9 +3469,9 @@
         VMware Cloud on Hyperscaler Clouds
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-support-configs.html">
         Supported Configurations
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-config-vmware.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-config-vmware-intro.html">
         VMware in the Hyperscalers Configuration
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-datastore.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-datastore-intro.html">
         NetApp Storage in Hyperscaler Clouds
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-summary.html">
         Summary and Conclusion
@@ -3578,9 +3578,9 @@
         VMware Cloud on Hyperscaler Clouds
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-support-configs.html">
         Supported Configurations
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-config-vmware.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-config-vmware-intro.html">
         VMware in the Hyperscalers Configuration
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-datastore.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-datastore-intro.html">
         NetApp Storage in Hyperscaler Clouds
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ehc-summary.html">
         Summary and Conclusion
@@ -4058,7 +4058,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-08 21:23:46 +0000">03/08/2022</time>
+    <time datetime="2022-03-09 02:01:20 +0000">03/09/2022</time>
     
   
 
@@ -4121,53 +4121,8 @@ To see the capabilities for a specific hyperscaler, click on the appropriate tab
 <div class="paragraph">
 <p>As with on-premises, planning a cloud based virtualization environment is critical for a successful production-ready environment for creating VMs and migration.</p>
 </div>
-<div class="exampleblock tabbed-block">
-<div class="content">
-<div class="openblock">
-<div class="title">Azure</div>
-<div class="content">
-<div class="paragraph">
-<p>As with on-premises, planning Azure VMware Solution is critical for a successful production-ready environment for creating VMs and migration.</p>
-</div>
-<div class="paragraph">
-<p>This section describes how to set up and manage Azure VMware Solution and use it in combination with the available options for connecting NetApp storage.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
-</td>
-<td class="content">
-In-guest storage is the only supported method of connecting Azure NetApp Files and Cloud Volumes ONTAP to Azure VMware Solution.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The setup process can be broken down into the following steps:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/ehc/azure/azure-setup.html#register">Register the resource provider and create a private cloud</a></p>
-</li>
-<li>
-<p><a href="/ehc/azure/azure-setup.html#connect">Connect to a new or existing ExpressRoute virtual network gateway</a></p>
-</li>
-<li>
-<p><a href="/ehc/azure/azure-setup.html#validate">Validate the network connectivity and access the private cloud</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="openblock">
-<div class="title">AWS</div>
-<div class="content">
-<div class="paragraph">
-<p>As with on-premises, planning VMware Cloud on AWS is critical for a successful production-ready environment for creating VMs and migration.</p>
-</div>
+<div class="sect2">
+<h3 id="aws-and-vmc">AWS and VMC</h3>
 <div class="paragraph">
 <p>This section describes how to set up and manage VMware Cloud on AWS SDDC and use it in combination with the available options for connecting NetApp storage.</p>
 </div>
@@ -4189,21 +4144,50 @@ In-guest storage is the only supported method of connecting FSx ONTAP and Cloud 
 <div class="ulist">
 <ul>
 <li>
-<p><a href="/ehc/aws/aws-setup.html#deploy">Deploy and configure VMware Cloud for AWS</a></p>
+<p><a href="aws/aws-setup.html#deploy">Deploy and configure VMware Cloud for AWS</a></p>
 </li>
 <li>
-<p><a href="/ehc/aws/aws-setup.html#connect">Connect VMware Cloud to FSx ONTAP</a></p>
+<p><a href="aws/aws-setup.html#connect">Connect VMware Cloud to FSx ONTAP</a></p>
 </li>
 </ul>
 </div>
 </div>
-</div>
-<div class="openblock">
-<div class="title">Google Cloud</div>
-<div class="content">
+<div class="sect2">
+<h3 id="azure-and-avs">Azure and AVS</h3>
 <div class="paragraph">
-<p>As with on-premises, planning Google Cloud VMware Engine (GCVE) is critical for a successful production-ready environment for creating VMs and migration.</p>
+<p>This section describes how to set up and manage Azure VMware Solution and use it in combination with the available options for connecting NetApp storage.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
+</td>
+<td class="content">
+In-guest storage is the only supported method of connecting Azure NetApp Files and Cloud Volumes ONTAP to Azure VMware Solution.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The setup process can be broken down into the following steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="azure/azure-setup.html#register">Register the resource provider and create a private cloud</a></p>
+</li>
+<li>
+<p><a href="azure/azure-setup.html#connect">Connect to a new or existing ExpressRoute virtual network gateway</a></p>
+</li>
+<li>
+<p><a href="azure/azure-setup.html#validate">Validate the network connectivity and access the private cloud</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="gcp-and-gcve">GCP and GCVE</h3>
 <div class="paragraph">
 <p>This section describes how to set up and manage GCVE and use it in combination with the available options for connecting NetApp storage.</p>
 </div>
@@ -4225,15 +4209,12 @@ In-guest storage is the only supported method of connecting Cloud Volumes ONTAP 
 <div class="ulist">
 <ul>
 <li>
-<p><a href="/ehc/gcp/gcp-setup.html#deploy">Deploy and Configure GCVE</a></p>
+<p><a href="gcp/gcp-setup.html#deploy">Deploy and Configure GCVE</a></p>
 </li>
 <li>
-<p><a href="/ehc/gcp/gcp-setup.html#enable-access">Enable Private Access to GCVE</a></p>
+<p><a href="gcp/gcp-setup.html#enable-access">Enable Private Access to GCVE</a></p>
 </li>
 </ul>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -4247,54 +4228,8 @@ In-guest storage is the only supported method of connecting Cloud Volumes ONTAP 
 <div class="paragraph">
 <p>Please visit <a href="ehc-support-configs.html">Supported NetApp Storage Options</a> for more information.</p>
 </div>
-<div class="exampleblock tabbed-block">
-<div class="content">
-<div class="openblock">
-<div class="title">Azure</div>
-<div class="content">
-<div class="paragraph">
-<p>Azure supports NetApp storage in the following configurations:</p>
-</div>
-<div class="paragraph">
-<p><strong>Guest Connected Storage</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/ehc/azure/azure-guest.html#anf">Azure NetApp Files (ANF) as guest connected storage</a></p>
-</li>
-<li>
-<p><a href="/ehc/azure/azure-guest.html#cvo">Cloud Volumes ONTAP (CVO) as guest connected storage</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Native Datastore</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://azure.microsoft.com/en-us/updates/azure-netapp-files-datastores-for-azure-vmware-solution-is-coming-soon/">Azure NetApp Files (ANF) as a native datastore<sup>1</sup></a></p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
-</td>
-<td class="content">
-1 - Currently in Private Preview
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="openblock">
-<div class="title">AWS</div>
-<div class="content">
+<div class="sect2">
+<h3 id="aws-and-vmc-2">AWS and VMC</h3>
 <div class="paragraph">
 <p>AWS supports NetApp storage in the following configurations:</p>
 </div>
@@ -4304,10 +4239,10 @@ In-guest storage is the only supported method of connecting Cloud Volumes ONTAP 
 <div class="ulist">
 <ul>
 <li>
-<p><a href="/ehc/aws/aws-guest.html#fsx-ontap">FSx ONTAP as guest connected storage</a></p>
+<p><a href="aws/aws-guest.html#fsx-ontap">FSx ONTAP as guest connected storage</a></p>
 </li>
 <li>
-<p><a href="/ehc/aws/aws-guest.html#cvo">Cloud Volumes ONTAP (CVO) as guest connected storage</a></p>
+<p><a href="aws/aws-guest.html#cvo">Cloud Volumes ONTAP (CVO) as guest connected storage</a></p>
 </li>
 </ul>
 </div>
@@ -4334,10 +4269,49 @@ In-guest storage is the only supported method of connecting Cloud Volumes ONTAP 
 </table>
 </div>
 </div>
+<div class="sect2">
+<h3 id="azure-and-avs-2">Azure and AVS</h3>
+<div class="paragraph">
+<p>Azure supports NetApp storage in the following configurations:</p>
 </div>
-<div class="openblock">
-<div class="title">Google Cloud</div>
-<div class="content">
+<div class="paragraph">
+<p><strong>Guest Connected Storage</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="azure/azure-guest.html#anf">Azure NetApp Files (ANF) as guest connected storage</a></p>
+</li>
+<li>
+<p><a href="azure/azure-guest.html#cvo">Cloud Volumes ONTAP (CVO) as guest connected storage</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Native Datastore</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://azure.microsoft.com/en-us/updates/azure-netapp-files-datastores-for-azure-vmware-solution-is-coming-soon/">Azure NetApp Files (ANF) as a native datastore<sup>1</sup></a></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
+</td>
+<td class="content">
+1 - Currently in Private Preview
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="gco-and-gcve">GCO and GCVE</h3>
 <div class="paragraph">
 <p>Google Cloud supports NetApp storage in the following configurations:</p>
 </div>
@@ -4347,10 +4321,10 @@ In-guest storage is the only supported method of connecting Cloud Volumes ONTAP 
 <div class="ulist">
 <ul>
 <li>
-<p><a href="/ehc/gcp/gcp-guest.html#cvo">Cloud Volumes ONTAP (CVO) as guest connected storage</a></p>
+<p><a href="gcp/gcp-guest.html#cvo">Cloud Volumes ONTAP (CVO) as guest connected storage</a></p>
 </li>
 <li>
-<p><a href="/ehc/gcp/gcp-guest.html#cvs">Cloud Volumes Service (CVS) as guest connected storage</a></p>
+<p><a href="gcp/gcp-guest.html#cvs">Cloud Volumes Service (CVS) as guest connected storage</a></p>
 </li>
 </ul>
 </div>
@@ -4375,9 +4349,6 @@ In-guest storage is the only supported method of connecting Cloud Volumes ONTAP 
 </td>
 </tr>
 </table>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
