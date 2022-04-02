@@ -4068,7 +4068,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 16:13:01 +0000">04/01/2022</time>
+    <time datetime="2022-04-02 05:17:09 +0000">04/02/2022</time>
     
   
 
@@ -4097,7 +4097,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>This solution documents the automated deployments of Cloud Volumes on AWS (CVO Single Node, CVO HA anf FSX ONTAP) and Azure (CVO Single Node, CVO HA and ANF) using Terraform modules. The code can be found at <a href="https://github.com/NetApp-Automation/na_cloud_volumes_automation" class="bare">https://github.com/NetApp-Automation/na_cloud_volumes_automation</a></p>
+<p>This solution documents the automated deployments of Cloud Volumes on AWS (CVO Single Node, CVO HA and FSX ONTAP) and Azure (CVO Single Node, CVO HA and ANF) using Terraform modules. The code can be found at <a href="https://github.com/NetApp-Automation/na_cloud_volumes_automation" class="bare">https://github.com/NetApp-Automation/na_cloud_volumes_automation</a></p>
 </div>
 </div>
 </div>
@@ -4332,7 +4332,7 @@ You can choose to deploy the connector by setting the variable "aws_connector_de
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>aws_connector_security_group_id</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The ID of the security group for the instance, multiple security groups can be provided seperated by ','.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The ID of the security group for the instance, multiple security groups can be provided separated by ','.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>aws_connector_iam_instance_profile_name</strong></p></td>
@@ -4573,7 +4573,7 @@ You can choose to deploy the connector by setting the variable "aws_connector_de
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>aws_connector_security_group_id</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The ID of the security group for the instance, multiple security groups can be provided seperated by ','.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The ID of the security group for the instance, multiple security groups can be provided separated by ','.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>aws_connector_iam_instance_profile_name</strong></p></td>
@@ -4859,7 +4859,7 @@ You can choose to deploy the connector by setting the variable "aws_connector_de
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>aws_connector_security_group_id</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The ID of the security group for the instance, multiple security groups can be provided seperated by ','.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The ID of the security group for the instance, multiple security groups can be provided separated by ','.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>aws_connector_iam_instance_profile_name</strong></p></td>
@@ -5108,7 +5108,7 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_capacity_pool_size</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capactiy Pool Size mentioned in TB.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capacity Pool Size mentioned in TB.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_vnet_creation_bool</strong></p></td>
@@ -5256,7 +5256,7 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <p><code>ANF Data Protection</code></p>
 </div>
 <div class="paragraph">
-<p>Terraform variabled for single ANF Volume with data protection enabled.</p>
+<p>Terraform variables for single ANF Volume with data protection enabled.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -5318,12 +5318,12 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_capacity_pool_size_primary</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capactiy Pool Size mentioned in TB.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capacity Pool Size mentioned in TB.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_capacity_pool_size_secondary</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capactiy Pool Size mentioned in TB.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capacity Pool Size mentioned in TB.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_vnet_primary_creation_bool</strong></p></td>
@@ -5548,7 +5548,7 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_capacity_pool_size</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capactiy Pool Size mentioned in TB.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capacity Pool Size mentioned in TB.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_vnet_creation_bool</strong></p></td>
@@ -5712,7 +5712,7 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-cli" data-lang="cli">  terraform destory</code></pre>
+<pre class="highlight"><code class="language-cli" data-lang="cli">  terraform destroy</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5762,7 +5762,7 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_capacity_pool_size</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capactiy Pool Size mentioned in TB.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) Capacity Pool Size mentioned in TB.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_vnet_creation_bool</strong></p></td>
@@ -5813,7 +5813,7 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <div class="content">
 <div class="paragraph">
 <div class="title">Terraform configuration files for deployment of Single Node CVO on Azure</div>
-<p>This section contains various Terraform configuration files to deploy/configure Single Node CVO (Cvloud Volumes ONTAP) on Azure.</p>
+<p>This section contains various Terraform configuration files to deploy/configure Single Node CVO (Cloud Volumes ONTAP) on Azure.</p>
 </div>
 <div class="paragraph">
 <p>Terraform Documentation: <a href="https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/latest/docs" class="bare">https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/latest/docs</a></p>
@@ -5985,17 +5985,17 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_location</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) TThe location where the working environment will be created.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The location where the working environment will be created.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_subnet_id</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) TThe name of the subnet for the Cloud Volumes ONTAP system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The name of the subnet for the Cloud Volumes ONTAP system.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_vnet_id</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) TThe name of the virtual network.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The name of the virtual network.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_vnet_resource_group</strong></p></td>
@@ -6076,7 +6076,7 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <div class="content">
 <div class="paragraph">
 <div class="title">Terraform configuration files for deployment of CVO HA on Azure</div>
-<p>This section contains various Terraform configuration files to deploy/configure CVO (Cloud VOlumes ONTAP) HA (High Availability) on Azure.</p>
+<p>This section contains various Terraform configuration files to deploy/configure CVO (Cloud Volumes ONTAP) HA (High Availability) on Azure.</p>
 </div>
 <div class="paragraph">
 <p>Terraform Documentation: <a href="https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/latest/docs" class="bare">https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/latest/docs</a></p>
@@ -6248,17 +6248,17 @@ You can choose to deploy the ANF volume using an existing vnet and subnet by set
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_location</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) TThe location where the working environment will be created.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The location where the working environment will be created.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_subnet_id</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) TThe name of the subnet for the Cloud Volumes ONTAP system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The name of the subnet for the Cloud Volumes ONTAP system.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_vnet_id</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) TThe name of the virtual network.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Required) The name of the virtual network.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>az_cvo_vnet_resource_group</strong></p></td>
