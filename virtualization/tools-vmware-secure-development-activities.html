@@ -4359,11 +4359,19 @@
 <p class="page-details">
   
     
-    <time datetime="2021-11-18 20:37:05 +0000">11/18/2021</time>
+    <time datetime="2022-02-18 14:43:09 +0000">02/18/2022</time>
     
   
 
 <span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-bingen">
+    <img  class="avatar avatar-small"
+          alt="netapp-bingen"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/96140985?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
@@ -4471,42 +4479,43 @@ permitted by applicable law.</pre>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8143</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8143 inbound</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS connections for REST API</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8043</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8043 inbound</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS connections</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">9060</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9060 inbound</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS connections<br>
 Used for SOAP over https connections<br>
 This port must be opened to allow a client to connect to the ONTAP tools API server.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22 inbound</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SSH (Disabled by default)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">9080</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9080 inbound</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS connections - VP and SRA - Internal connections from loopback only</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">9083</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS connections - VP and SRA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9083 inbound</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS connections - VP and SRA<br>
+Used for SOAP over https connections</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Used for SOAP over https connections</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1162</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1162 inbound</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VP SNMP trap packets</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1527</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1527 internal only</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Derby database port, only between this computer and itself, external connections not accepted&#8201;&#8212;&#8201;Internal connections only</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443 bi-directional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used for connections to ONTAP clusters</p></td>
 </tr>
 </tbody>
 </table>
