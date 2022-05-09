@@ -13,6 +13,209 @@
   
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_LB_F5BigIP.html</loc>
+      
+      <lastmod>2022-04-28T19:48:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_LB_MetalLB.html</loc>
+      
+      <lastmod>2022-03-14T16:36:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_LB_SeeSaw.html</loc>
+      
+      <lastmod>2022-05-02T21:25:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_additional_information.html</loc>
+      
+      <lastmod>2022-03-14T21:44:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_anthos_BM.html</loc>
+      
+      <lastmod>2022-05-02T21:29:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_anthos_VMW.html</loc>
+      
+      <lastmod>2022-05-02T21:36:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_anthos_abstract.html</loc>
+      
+      <lastmod>2022-03-16T13:14:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_astra_applications.html</loc>
+      
+      <lastmod>2022-03-14T16:36:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_astra_protect.html</loc>
+      
+      <lastmod>2022-05-02T21:42:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_astra_register.html</loc>
+      
+      <lastmod>2022-03-14T16:36:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_load_balancers.html</loc>
+      
+      <lastmod>2022-03-16T15:49:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_netapp_element.html</loc>
+      
+      <lastmod>2022-05-02T21:53:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_netapp_ontap.html</loc>
+      
+      <lastmod>2022-05-03T16:55:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_overview_advanced.html</loc>
+      
+      <lastmod>2022-03-16T15:49:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_overview_anthos.html</loc>
+      
+      <lastmod>2022-05-03T17:00:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_overview_astra.html</loc>
+      
+      <lastmod>2022-04-29T20:07:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
+      
+      <lastmod>2022-05-03T20:41:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
+      
+      <lastmod>2022-05-03T21:41:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
+      
+      <lastmod>2022-05-03T21:44:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_overview_netapp.html</loc>
+      
+      <lastmod>2022-03-16T15:49:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_overview_storint.html</loc>
+      
+      <lastmod>2022-04-15T15:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_overview_trident.html</loc>
+      
+      <lastmod>2022-05-03T21:56:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_private_registry.html</loc>
+      
+      <lastmod>2022-05-03T22:03:10+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_solution_overview.html</loc>
+      
+      <lastmod>2022-05-04T19:41:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_trident_element_iscsi.html</loc>
+      
+      <lastmod>2022-03-16T15:49:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_trident_ontap_iscsi.html</loc>
+      
+      <lastmod>2022-05-04T19:52:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_trident_ontap_nfs.html</loc>
+      
+      <lastmod>2022-03-16T15:49:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_use_cases.html</loc>
+      
+      <lastmod>2022-03-16T13:14:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_videos_and_demos.html</loc>
+      
+      <lastmod>2022-03-16T13:14:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/about.html</loc>
       
       <lastmod>2021-12-02T19:24:16+00:00</lastmod>
@@ -706,58 +909,58 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_abstract.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_abstract.html</loc>
       
-      <lastmod>2021-04-20T19:00:38+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_conclusion.html</loc>
-      
-      <lastmod>2021-04-13T14:37:58+00:00</lastmod>
+      <lastmod>2022-05-04T19:57:43+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_deployment_summary.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_conclusion.html</loc>
       
-      <lastmod>2021-04-13T14:37:58+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_introduction.html</loc>
-      
-      <lastmod>2021-04-13T14:37:58+00:00</lastmod>
+      <lastmod>2022-03-14T15:27:15+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_solution_overview.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_deployment_summary.html</loc>
       
-      <lastmod>2021-04-13T14:37:58+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_solution_requirements.html</loc>
-      
-      <lastmod>2021-04-13T14:37:58+00:00</lastmod>
+      <lastmod>2022-03-14T15:27:15+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_solution_validation.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_introduction.html</loc>
       
-      <lastmod>2021-04-16T18:10:33+00:00</lastmod>
+      <lastmod>2022-05-04T20:12:53+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/bmanthos_where_to_find_additional_information.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_solution_overview.html</loc>
       
-      <lastmod>2021-04-14T17:18:55+00:00</lastmod>
+      <lastmod>2022-03-14T15:27:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_solution_requirements.html</loc>
+      
+      <lastmod>2022-05-04T20:15:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_solution_validation.html</loc>
+      
+      <lastmod>2022-05-04T20:17:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_where_to_find_additional_information.html</loc>
+      
+      <lastmod>2022-03-14T15:27:15+00:00</lastmod>
       
     </url>
   
@@ -876,7 +1079,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
       
-      <lastmod>2022-03-08T17:26:10+00:00</lastmod>
+      <lastmod>2022-03-29T15:19:58+00:00</lastmod>
       
     </url>
   
@@ -912,6 +1115,13 @@
       <loc>https://docs.netapp.com/us-en/netapp-solutions/automation/cloud_volumes_terraform.html</loc>
       
       <lastmod>2022-04-05T15:13:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
+      
+      <lastmod>2022-05-05T16:15:39+00:00</lastmod>
       
     </url>
   
@@ -1084,6 +1294,118 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_additional_information.html</loc>
+      
+      <lastmod>2022-03-28T19:00:45+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_netapp_ontap.html</loc>
+      
+      <lastmod>2022-04-28T19:01:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_overview_astra.html</loc>
+      
+      <lastmod>2022-04-25T21:12:35+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_overview_devops.html</loc>
+      
+      <lastmod>2022-04-25T21:53:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_overview_netapp.html</loc>
+      
+      <lastmod>2022-04-28T19:02:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_overview_storint.html</loc>
+      
+      <lastmod>2022-05-05T16:15:39+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_overview_trident.html</loc>
+      
+      <lastmod>2022-04-28T13:08:51+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_solution_overview.html</loc>
+      
+      <lastmod>2022-05-05T16:15:39+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_use_case_flexclone.html</loc>
+      
+      <lastmod>2022-04-28T15:20:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_use_case_integrated_data_protection.html</loc>
+      
+      <lastmod>2022-04-28T17:25:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_use_case_postmortem_with_restore.html</loc>
+      
+      <lastmod>2022-04-28T18:55:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_use_cases_overview.html</loc>
+      
+      <lastmod>2022-04-28T17:26:50+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_videos_and_demos.html</loc>
+      
+      <lastmod>2022-04-28T18:59:42+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_videos_astra_control_flexclone.html</loc>
+      
+      <lastmod>2022-04-28T18:56:52+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_videos_clone_for_postmortem_and_restore.html</loc>
+      
+      <lastmod>2022-04-28T18:57:50+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_videos_data_protection_in_ci_cd_pipeline.html</loc>
+      
+      <lastmod>2022-04-28T18:58:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/ef-series-ai-overview.html</loc>
       
       <lastmod>2022-01-31T23:43:13+00:00</lastmod>
@@ -1233,7 +1555,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/hc-whatsnew.html</loc>
       
-      <lastmod>2022-03-08T17:26:10+00:00</lastmod>
+      <lastmod>2022-03-29T15:19:58+00:00</lastmod>
       
     </url>
   
@@ -1654,6 +1976,13 @@
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/</loc>
       
       <lastmod>2022-01-31T23:56:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/</loc>
+      
+      <lastmod>2022-03-17T19:35:44+00:00</lastmod>
       
     </url>
   
@@ -2535,7 +2864,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-05-09T18:30:51+00:00</lastmod>
+      <lastmod>2022-05-09T19:48:07+00:00</lastmod>
       
     </url>
   
@@ -2654,7 +2983,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_demos_videos.html</loc>
       
-      <lastmod>2022-04-08T14:14:29+00:00</lastmod>
+      <lastmod>2022-04-08T14:40:35+00:00</lastmod>
       
     </url>
   
