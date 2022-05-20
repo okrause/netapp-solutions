@@ -1079,7 +1079,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
       
-      <lastmod>2022-03-29T15:19:58+00:00</lastmod>
+      <lastmod>2022-05-20T12:37:50+00:00</lastmod>
       
     </url>
   
@@ -1966,7 +1966,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/</loc>
       
       <lastmod>2022-01-18T16:56:35+00:00</lastmod>
       
@@ -1980,7 +1980,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/</loc>
       
       <lastmod>2022-01-18T16:56:35+00:00</lastmod>
       
@@ -2001,16 +2001,16 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/</loc>
       
-      <lastmod>2022-03-17T19:35:44+00:00</lastmod>
+      <lastmod>2022-01-31T23:56:46+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/</loc>
       
-      <lastmod>2022-01-31T23:56:46+00:00</lastmod>
+      <lastmod>2022-03-17T19:35:44+00:00</lastmod>
       
     </url>
   
@@ -3018,7 +3018,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-05-17T17:09:42+00:00</lastmod>
+      <lastmod>2022-05-20T13:27:05+00:00</lastmod>
       
     </url>
   
