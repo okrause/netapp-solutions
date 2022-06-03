@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">English</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">English</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/netapp-solutions/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_demos_videos.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/netapp-solutions/virtualization/vsphere_demos_videos.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/netapp-solutions/virtualization/vsphere_demos_videos.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/netapp-solutions/virtualization/vsphere_demos_videos.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/netapp-solutions/virtualization/vsphere_demos_videos.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_demos_videos.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/netapp-solutions/virtualization/vsphere_demos_videos.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/netapp-solutions/virtualization/vsphere_demos_videos.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/netapp-solutions/virtualization/vsphere_demos_videos.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/netapp-solutions/virtualization/vsphere_demos_videos.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -3958,7 +3950,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/index.html">
         NetApp Solutions Documentation
       </a></li><li class="subfolders "><a href="/us-en/netapp-solutions/ai/index.html">
@@ -5161,7 +5153,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-20 18:01:32 +0000">05/20/2022</time>
+    <time datetime="2022-06-03 00:36:33 +0000">06/03/2022</time>
     
   
 
@@ -5174,14 +5166,6 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" class="ext-link-indicator" href="https://github.com/jpowellgit">
-    <img  class="avatar avatar-small"
-          alt="jpowellgit"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/77066602?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
   <a target="_blank" class="ext-link-indicator" href="https://github.com/kevin-hoke">
     <img  class="avatar avatar-small"
           alt="kevin-hoke"
@@ -5190,21 +5174,97 @@
           style="border-radius: 50%;"/>
   </a>
   
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/jpowellgit">
+    <img  class="avatar avatar-small"
+          alt="jpowellgit"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/77066602?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph">
 <p>See the following videos and demos highlighting specific features of the hybrid cloud, virtualization, and container solutions.</p>
 </div>
+<details>
+<summary class="title">NetApp ONTAP Tools for VMware vSphere</summary>
+<div class="content">
+
+</div>
+</details>
+<div class="videoblock">
+<div class="content">
+<video src="./../media/otv_overview.mp4" controls>
+Your browser does not support the video tag.
+</video>
 </div>
 </div>
-<div class="sect1">
-<h2 id="netapp-snapcenter-and-snapcenter-plug-in-for-vmware-vsphere">NetApp SnapCenter and SnapCenter Plug-in for VMware vSphere</h2>
-<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+
+</div>
+</div>
+<div class="videoblock">
+<div class="content">
+<video src="./../media/otv_iscsi_provision.mp4" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
+</div>
+<div class="videoblock">
+<div class="content">
+<video src="./../media/otv_nfs_provision.mp4" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
+</div>
+<details>
+<summary class="title">VMware Cloud on AWS with AWS FSx for NetApp ONTAP</summary>
+<div class="content">
+
+</div>
+</details>
+<div class="videoblock">
+<div class="content">
+<video src="./../media/vmc_windows_vm_iscsi.mp4" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
+</div>
+<div class="videoblock">
+<div class="content">
+<video src="./../media/vmc_linux_vm_nfs.mp4" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
+</div>
+<details>
+<summary class="title">SnapCenter Plug-in for VMware vSphere</summary>
+<div class="content">
 <div class="paragraph">
 <p>NetApp SnapCenter software is an easy-to-use enterprise platform to securely coordinate and manage data protection across applications, databases, and file systems.</p>
 </div>
@@ -5214,9 +5274,8 @@
 <div class="paragraph">
 <p>For more information about NetApp SnapCenter Plug-in for VMware vSphere, see the <a href="https://docs.netapp.com/ocsc-42/index.jsp?topic=%2Fcom.netapp.doc.ocsc-con%2FGUID-29BABBA7-B15F-452F-B137-2E5B269084B9.html">NetApp SnapCenter Plug-in for VMware vSphere Overview</a>.</p>
 </div>
-<details>
-<summary class="title">SnapCenter Plug-in for VMware vSphere - Solution Pre-Requisites</summary>
-<div class="content">
+</div>
+</details>
 <div class="videoblock">
 <div class="content">
 <video src="./../media/scv_prereq_overview.mp4" controls>
@@ -5224,11 +5283,11 @@ Your browser does not support the video tag.
 </video>
 </div>
 </div>
-</div>
-</details>
-<details>
-<summary class="title">SnapCenter Plug-in for VMware vSphere - Deployment</summary>
+<div class="exampleblock">
 <div class="content">
+
+</div>
+</div>
 <div class="videoblock">
 <div class="content">
 <video src="./../media/scv_deployment.mp4" controls>
@@ -5236,11 +5295,11 @@ Your browser does not support the video tag.
 </video>
 </div>
 </div>
-</div>
-</details>
-<details>
-<summary class="title">SnapCenter Plug-in for VMware vSphere - Backup Workflow</summary>
+<div class="exampleblock">
 <div class="content">
+
+</div>
+</div>
 <div class="videoblock">
 <div class="content">
 <video src="./../media/scv_backup_workflow.mp4" controls>
@@ -5248,11 +5307,11 @@ Your browser does not support the video tag.
 </video>
 </div>
 </div>
-</div>
-</details>
-<details>
-<summary class="title">SnapCenter Plug-in for VMware vSphere - Restore Workflow</summary>
+<div class="exampleblock">
 <div class="content">
+
+</div>
+</div>
 <div class="videoblock">
 <div class="content">
 <video src="./../media/scv_restore_workflow.mp4" controls>
@@ -5260,11 +5319,11 @@ Your browser does not support the video tag.
 </video>
 </div>
 </div>
-</div>
-</details>
-<details>
-<summary class="title">SnapCenter - SQL Restore Workflow</summary>
+<div class="exampleblock">
 <div class="content">
+
+</div>
+</div>
 <div class="videoblock">
 <div class="content">
 <video src="./../media/scv_sql_restore.mp4" controls>
@@ -5272,22 +5331,20 @@ Your browser does not support the video tag.
 </video>
 </div>
 </div>
+<div class="exampleblock">
+<div class="content">
+
 </div>
-</details>
 </div>
-</div>
-<div class="sect1">
-<h2 id="netapp-with-vmware-tanzu">NetApp with VMware Tanzu</h2>
-<div class="sectionbody">
+<details>
+<summary class="title">NetApp with VMware Tanzu</summary>
+<div class="content">
 <div class="paragraph">
 <p>VMware Tanzu enables customers to deploy, administer, and manage their Kubernetes environment through vSphere or the VMware Cloud Foundation. This portfolio of products from VMware allows customer to manage all their relevant Kubernetes clusters from a single control plane by choosing the VMware Tanzu edition that best suits their needs.</p>
 </div>
 <div class="paragraph">
 <p>For more information about VMware Tanzu, see the <a href="https://tanzu.vmware.com/tanzu" target="_blank" rel="noopener">VMware Tanzu Overview</a>. This review covers use cases, available additions, and more about VMware Tanzu.</p>
 </div>
-<details>
-<summary class="title">NetApp with VMware Tanzu Videos</summary>
-<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -5303,20 +5360,15 @@ Your browser does not support the video tag.
 </div>
 </div>
 </details>
-</div>
-</div>
-<div class="sect1">
-<h2 id="netapp-with-red-hat-openshift">NetApp with Red Hat OpenShift</h2>
-<div class="sectionbody">
+<details>
+<summary class="title">NetApp with Red Hat OpenShift</summary>
+<div class="content">
 <div class="paragraph">
 <p>Red Hat OpenShift, an enterprise Kubernetes platform, enables you to run container-based applications with an open hybrid-cloud strategy. Available as a cloud service on leading public clouds or as self-managed software, Red Hat OpenShift provides customers with the flexibility they need when designing their container-based solution.</p>
 </div>
 <div class="paragraph">
 <p>For more information regarding Red Hat OpenShift, see this <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift" target="_blank" rel="noopener">Red Hat OpenShift Overview</a>. You can also review the product documentation and deployment options to learn more about Red Hat OpenShift.</p>
 </div>
-<details>
-<summary class="title">NetApp with Red Hat OpenShift videos</summary>
-<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -5329,8 +5381,6 @@ Your browser does not support the video tag.
 </div>
 </div>
 </details>
-</div>
-</div>
 
     </article>
     <!-- Page Container -->
@@ -5477,4 +5527,5 @@ Your browser does not support the video tag.
     </script>
     <script src='/us-en/netapp-solutions/js/www-ntap.js'></script>
     <script src='/us-en/netapp-solutions/js/tabbed-blocks.js'></script>
+    <script src='/us-en/netapp-solutions/js/sidebar.js'></script>
   </body></html>
