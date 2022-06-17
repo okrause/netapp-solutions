@@ -5065,7 +5065,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 16:40:36 +0000">06/08/2022</time>
+    <time datetime="2022-06-17 01:54:41 +0000">06/17/2022</time>
     
   
 
@@ -6358,7 +6358,74 @@ A separate schedule will be created for the Log volume replication, so that it c
 <div class="title">Replication for Log Volumes</div>
 <div class="content">
 <div class="paragraph">
-<p>Unresolved directive in db_protection_awx_automation.adoc - include::../_iinclude/db_protection_log_replication.adoc[]</p>
+<p>Scheduling the Log Replication Playbook</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure and launch the job template.</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Copy the previously created job template.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to Resources → Templates.</p>
+</li>
+<li>
+<p>Find the ONTAP/CVO Setup Template, and on the far right click on Copy Template</p>
+</li>
+<li>
+<p>Click Edit Template on the copied template, and change the name to Log Replication Playbook.</p>
+</li>
+<li>
+<p>Keep the same inventory, project, credentials for the template.</p>
+</li>
+<li>
+<p>Select the ora_replication_logs.yml as the playbook to be executed.</p>
+</li>
+<li>
+<p>The variables will remain the same, but the CVO cluster IP will need to be set in the variable dst_cluster_ip.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Schedule the job template.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to Resources → Templates.</p>
+</li>
+<li>
+<p>Click the Log Replication Playbook template and then click Schedules at the top set of options.</p>
+</li>
+<li>
+<p>Click Add, add Name Schedule for Log Replication, choose the Start date/time at the beginning of the hour, choose your Local time zone, and Run frequency. Run frequency will be often the SnapMirror replication will be updated.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
+</td>
+<td class="content">
+It is recommended to set the log schedule to update every hour to ensure the recovery to the last hourly update.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
