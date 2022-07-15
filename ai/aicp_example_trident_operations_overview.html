@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/us-en/netapp-solutions/search.html"
           data-type="widget" 
-          data-placeholder="Search Documentation" 
-          data-no-results-found="No results were found for {query}" 
-          data-did-you-mean="Search for {suggestion}." 
-          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-          data-results-found="{hitCount} results found"  
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -5097,7 +5099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2021-11-04 18:39:44 +0000">11/04/2021</time>
+    <time datetime="2022-07-15 18:19:55 +0000">07/15/2022</time>
     
   
 
@@ -5130,8 +5132,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="import-an-existing-volume">Import an Existing Volume</h3>
+<div class="sect1">
+<h2 id="import-an-existing-volume">Import an Existing Volume</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>If there are existing volumes on your NetApp storage system/platform that you want to mount on containers within your Kubernetes cluster, but that are not tied to PVCs in the cluster, then you must import these volumes. You can use the Trident volume import functionality to import these volumes.</p>
 </div>
@@ -5203,8 +5206,10 @@ pb-fg-all-iface2     Bound    default-pb-fg-all-iface2-85aee     10995116277760 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="provision-a-new-volume">Provision a New Volume</h3>
+</div>
+<div class="sect1">
+<h2 id="provision-a-new-volume">Provision a New Volume</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>You can use Trident to provision a new volume on your NetApp storage system or platform. The following example commands show the provisioning of a new FlexVol volume. In this example, the volume is provisioned using the StorageClass that was created in the example in the section <a href="aicp_example_kubernetes_storageclasses_for_ontap_ai_deployments.html">Example Kubernetes StorageClasses for ONTAP AI Deployments</a>, step 2.</p>
 </div>
@@ -5237,6 +5242,7 @@ tensorflow-results                Bound     default-tensorflow-results-2fd60   1
 </div>
 <div class="paragraph">
 <p><a href="aicp_example_high-performance_jobs_for_ontap_ai_deployments_overview.html">Next: Example High-Performance Jobs for ONTAP AI Deployments Overview.</a></p>
+</div>
 </div>
 </div>
 

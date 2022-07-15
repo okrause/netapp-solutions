@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/us-en/netapp-solutions/search.html"
           data-type="widget" 
-          data-placeholder="Search Documentation" 
-          data-no-results-found="No results were found for {query}" 
-          data-did-you-mean="Search for {suggestion}." 
-          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-          data-results-found="{hitCount} results found"  
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -5097,7 +5099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-20 15:10:48 +0000">05/20/2022</time>
+    <time datetime="2022-07-15 18:19:55 +0000">07/15/2022</time>
     
   
 
@@ -5122,8 +5124,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="use-case-1-optimizing-storage">Use case #1: Optimizing storage</h3>
+<div class="sect1">
+<h2 id="use-case-1-optimizing-storage">Use case #1: Optimizing storage</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>When performing a sizing exercise using RVtools output, it is always evident that the horsepower (vCPU/vMem) scale is parallel with storage. Many times, organizations find themselves in a situation where the storage space requires drives the size of the cluster well beyond what is needed for horsepower.</p>
 </div>
@@ -5131,8 +5134,10 @@
 <p>By integrating NetApp Cloud Volumes, organizations can realize a vSphere-based cloud solution with a simple migration approach, with no re-platforming, no IP changes, and no architectural changes. Additionally, this optimization enables you to scale the storage footprint while keeping the host count to least amount required in vSphere, but no change to the storage hierarchy, security, or files made available. This allows you to optimize the deployment and reduce the overall TCO by 35–45%. This integration also enables you to scale storage from warm storage to production-level performance in seconds.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="use-case-2-cloud-migration">Use case #2: Cloud migration</h3>
+</div>
+<div class="sect1">
+<h2 id="use-case-2-cloud-migration">Use case #2: Cloud migration</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Organizations are under pressure to migrate applications from on-premises data centers to the Public Cloud for multiple reasons: an upcoming lease expiration; a finance directive to move from capital expenditure (capex) spending to operational expenditures (opex) spending; or simply a top-down mandate to move everything to the cloud.</p>
 </div>
@@ -5140,14 +5145,18 @@
 <p>When speed is critical, only a streamlined migration approach is feasible because re-platforming and refactoring applications to adapt to the cloud’s particular IaaS platform is slow and expensive, often taking months. By combining NetApp Cloud Volumes with the bandwidth-efficient SnapMirror replication for guest-connected storage (including RDMs in conjunction with application-consistent Snapshot copies and HCX, cloud specific migration (e.g. Azure Migrate), or third-party products for replicating VMs), this transition is even easier than relying on time-consuming I/O filters mechanisms.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="use-case-3-data-center-expansion">Use case #3: Data center expansion</h3>
+</div>
+<div class="sect1">
+<h2 id="use-case-3-data-center-expansion">Use case #3: Data center expansion</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>When a data center reaches capacity limits due to seasonal demand spikes or just steady organic growth, moving to the cloud-hosted VMware along with NetApp Cloud Volumes is an easy solution. Leveraging NetApp Cloud Volumes allows storage creation, replication, and expansion very easily by providing high availability across availability zones and dynamic scaling capabilities. Leveraging NetApp Cloud Volumes helps in minimizing host cluster capacity by overcoming the need for stretch clusters.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="use-case-4-disaster-recovery-to-the-cloud">Use case #4: Disaster recovery to the cloud</h3>
+</div>
+<div class="sect1">
+<h2 id="use-case-4-disaster-recovery-to-the-cloud">Use case #4: Disaster recovery to the cloud</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>In a traditional approach, if a disaster occurs, the VMs replicated to the cloud would require conversion to the cloud’s own hypervisor platform before they could be restored – not a task to be handled during a crisis.</p>
 </div>
@@ -5155,10 +5164,13 @@
 <p>By using NetApp Cloud Volumes for guest-connected storage using SnapCenter and SnapMirror replication from on-premises along with public cloud virtualization solutions, a better approach for disaster recovery can be devised allowing VM replicas to be recovered on fully consistent VMware SDDC infrastructure along with cloud specific recovery tools (e.g. Azure Site Recovery) or equivalent third-party tools such as Veeam. This approach also enables you to perform disaster recovery drills and recovery from ransomware quickly. This also enables you to scale to full production for testing or during a disaster by adding hosts on-demand.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="use-case-5-application-modernization">Use case #5: Application modernization</h3>
+</div>
+<div class="sect1">
+<h2 id="use-case-5-application-modernization">Use case #5: Application modernization</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>After applications are in the public cloud, organizations will want to take advantage of the hundreds of powerful cloud services to modernize and extend them. With the use of NetApp Cloud Volumes, modernization is an easy process because the application data is not locked into vSAN and allows data mobility for a wide range of use cases, including Kubernetes.</p>
+</div>
 </div>
 </div>
 <div class="sect1">

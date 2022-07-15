@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/us-en/netapp-solutions/search.html"
           data-type="widget" 
-          data-placeholder="Search Documentation" 
-          data-no-results-found="No results were found for {query}" 
-          data-did-you-mean="Search for {suggestion}." 
-          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-          data-results-found="{hitCount} results found"  
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -5097,7 +5099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2021-11-04 18:39:44 +0000">11/04/2021</time>
+    <time datetime="2022-07-15 18:19:55 +0000">07/15/2022</time>
     
   
 
@@ -5130,8 +5132,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="prerequisites">Prerequisites</h3>
+<div class="sect1">
+<h2 id="prerequisites">Prerequisites</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Before you perform the deployment exercise that is outlined in this section, we assume that you have already performed the following tasks:</p>
 </div>
@@ -5146,8 +5149,10 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="set-default-kubernetes-storageclass">Set Default Kubernetes StorageClass</h3>
+</div>
+<div class="sect1">
+<h2 id="set-default-kubernetes-storageclass">Set Default Kubernetes StorageClass</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Before you deploy Kubeflow, you must designate a default StorageClass within your Kubernetes cluster. The Kubeflow deployment process attempts to provision new persistent volumes using the default StorageClass. If no StorageClass is designated as the default StorageClass, then the deployment fails. To designate a default StorageClass within your cluster, perform the following task from the deployment jump host. If you have already designated a default StorageClass within your cluster, then you can skip this step.</p>
 </div>
@@ -5189,8 +5194,10 @@ ontap-ai-flexvols-retain (default)   csi.trident.netapp.io   54s</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="use-nvidia-deepops-to-deploy-kubeflow">Use NVIDIA DeepOps to Deploy Kubeflow</h3>
+</div>
+<div class="sect1">
+<h2 id="use-nvidia-deepops-to-deploy-kubeflow">Use NVIDIA DeepOps to Deploy Kubeflow</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>NetApp recommends using the Kubeflow deployment tool that is provided by NVIDIA DeepOps. To deploy Kubeflow in your Kubernetes cluster using the DeepOps deployment tool, perform the following tasks from the deployment jump host.</p>
 </div>
@@ -5395,6 +5402,7 @@ mysql-pv-claim   Bound    pvc-b2429afd-d028-11e9-9b9d-00505681a82d   20Gi       
 </div>
 <div class="paragraph">
 <p><a href="aicp_example_kubeflow_operations_and_tasks_overview.html">Next: Example Kubeflow Operations and Tasks.</a></p>
+</div>
 </div>
 </div>
 

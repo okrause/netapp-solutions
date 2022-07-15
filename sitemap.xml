@@ -288,7 +288,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/ai-edge-test-procedure.html</loc>
       
-      <lastmod>2021-10-20T19:08:38+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -407,14 +407,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/ai-sent-use-cases.html</loc>
       
-      <lastmod>2021-10-26T17:53:41+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/ai-sent-validation-results.html</loc>
       
-      <lastmod>2021-10-25T20:58:09+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -435,7 +435,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/aicp_apache_airflow_deployment.html</loc>
       
-      <lastmod>2021-11-04T18:39:44+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -498,7 +498,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/aicp_example_trident_operations_overview.html</loc>
       
-      <lastmod>2021-11-04T18:39:44+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -519,7 +519,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/aicp_hardware_and_software_requirements.html</loc>
       
-      <lastmod>2021-11-04T18:39:44+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -533,14 +533,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/aicp_kubeflow_deployment_overview.html</loc>
       
-      <lastmod>2021-11-04T18:39:44+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/aicp_kubernetes_deployment.html</loc>
       
-      <lastmod>2021-11-04T18:39:44+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -743,7 +743,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/automation/automation_basic_setup.html</loc>
       
-      <lastmod>2021-03-02T20:46:31+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -960,7 +960,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/bda-ai-hdfs-and-mapr-fs-to-ontap-nfs.html</loc>
       
-      <lastmod>2022-02-04T21:11:21+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -981,7 +981,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/bda-ai-where-to-find-additional-information.html</loc>
       
-      <lastmod>2022-02-04T21:11:21+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -1394,7 +1394,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/ef-series-ai-overview.html</loc>
       
-      <lastmod>2022-01-31T23:43:13+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -1443,7 +1443,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/ehc-summary.html</loc>
       
-      <lastmod>2022-05-20T15:10:48+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -1744,7 +1744,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/vdi-vds/hcvdivds_use_cases.html</loc>
       
-      <lastmod>2021-04-01T21:01:43+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -1891,7 +1891,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/hybrid_dbops_snapcenter_prereq_cloud.html</loc>
       
-      <lastmod>2022-03-31T13:54:12+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -1931,23 +1931,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/</loc>
       
-      <lastmod>2022-03-31T13:54:12+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/</loc>
-      
-      <lastmod>2022-01-13T21:14:38+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/</loc>
-      
-      <lastmod>2021-12-15T15:02:05+00:00</lastmod>
+      <lastmod>2022-05-20T15:10:48+00:00</lastmod>
       
     </url>
   
@@ -1966,13 +1952,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/</loc>
-      
-      <lastmod>2022-05-20T15:10:48+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/</loc>
       
       <lastmod>2022-05-20T15:10:48+00:00</lastmod>
@@ -1980,9 +1959,30 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/</loc>
+      
+      <lastmod>2022-03-31T13:54:12+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/</loc>
+      
+      <lastmod>2021-12-15T15:02:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/</loc>
       
       <lastmod>2022-03-17T19:35:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/</loc>
+      
+      <lastmod>2022-01-13T21:14:38+00:00</lastmod>
       
     </url>
   
@@ -2262,7 +2262,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/ontap-ai-overview.html</loc>
       
-      <lastmod>2022-01-31T23:43:13+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -2948,14 +2948,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-07-11T18:52:01+00:00</lastmod>
+      <lastmod>2022-07-15T18:25:57+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/sql-srv-anf_conclusion.html</loc>
       
-      <lastmod>2022-03-31T13:54:12+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   
@@ -3473,7 +3473,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/xcp/xcp-bp-troubleshooting.html</loc>
       
-      <lastmod>2021-09-23T21:13:42+00:00</lastmod>
+      <lastmod>2022-07-15T18:19:55+00:00</lastmod>
       
     </url>
   

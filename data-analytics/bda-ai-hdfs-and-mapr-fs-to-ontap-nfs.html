@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/us-en/netapp-solutions/search.html"
           data-type="widget" 
-          data-placeholder="Search Documentation" 
-          data-no-results-found="No results were found for {query}" 
-          data-did-you-mean="Search for {suggestion}." 
-          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-          data-results-found="{hitCount} results found"  
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -5097,7 +5099,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-04 21:11:21 +0000">02/04/2022</time>
+    <time datetime="2022-07-15 18:19:55 +0000">07/15/2022</time>
     
   
 
@@ -5120,8 +5122,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="why-are-customers-moving-from-hdfs-and-mapr-fs-to-nfs">Why are customers moving from HDFS and MapR-FS to NFS?</h3>
+<div class="sect1">
+<h2 id="why-are-customers-moving-from-hdfs-and-mapr-fs-to-nfs">Why are customers moving from HDFS and MapR-FS to NFS?</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Most of the Hadoop distributions such as Cloudera and Hortonworks use HDFS and MapR distributions uses their own filesystem called Mapr-FS to store data. HDFS and MapR-FS data provides the valuable insights to data scientists that can be leveraged in machine learning (ML) and deep learning (DL). The data in HDFS and MapR-FS is not shared, which means it cannot be used by other applications. Customers are looking for shared data, specifically in the banking sector where customers’ sensitive data is used by multiple applications. The latest version of Hadoop (3.x or later) supports NFS data source, which can be accessed without additional third-party software. With the new NetApp XCP feature, data can be moved directly from HDFS and MapR-FS to NetApp NFS in order to provide access to multiple applications</p>
 </div>
@@ -5178,6 +5181,7 @@
 </div>
 <div class="paragraph">
 <p><a href="bda-ai-business-benefits.html">Next: Business benefits.</a></p>
+</div>
 </div>
 </div>
 
