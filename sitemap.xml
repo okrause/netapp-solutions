@@ -1924,20 +1924,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/</loc>
-      
-      <lastmod>2022-01-31T23:56:46+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/</loc>
-      
-      <lastmod>2022-05-20T15:10:48+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/</loc>
       
       <lastmod>2022-05-20T15:10:48+00:00</lastmod>
@@ -1952,23 +1938,16 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/</loc>
       
       <lastmod>2022-05-20T15:10:48+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/</loc>
       
-      <lastmod>2022-03-31T13:54:12+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/</loc>
-      
-      <lastmod>2021-12-15T15:02:05+00:00</lastmod>
+      <lastmod>2022-05-20T15:10:48+00:00</lastmod>
       
     </url>
   
@@ -1983,6 +1962,27 @@
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/</loc>
       
       <lastmod>2022-01-13T21:14:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/</loc>
+      
+      <lastmod>2021-12-15T15:02:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/</loc>
+      
+      <lastmod>2022-03-31T13:54:12+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/</loc>
+      
+      <lastmod>2022-01-31T23:56:46+00:00</lastmod>
       
     </url>
   
@@ -2948,7 +2948,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-07-15T18:25:57+00:00</lastmod>
+      <lastmod>2022-07-19T11:46:47+00:00</lastmod>
       
     </url>
   
