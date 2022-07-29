@@ -1275,7 +1275,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/confluent-kafka-technology-overview.html</loc>
       
-      <lastmod>2022-01-05T16:11:34+00:00</lastmod>
+      <lastmod>2022-07-29T19:34:53+00:00</lastmod>
       
     </url>
   
@@ -2969,7 +2969,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-07-25T12:53:25+00:00</lastmod>
+      <lastmod>2022-07-29T19:50:59+00:00</lastmod>
       
     </url>
   
@@ -3005,6 +3005,69 @@
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/sql-srv-anf_where_to_find_additional_information.html</loc>
       
       <lastmod>2022-03-31T13:54:12+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/stgr-splunkss-abstract.html</loc>
+      
+      <lastmod>2022-07-29T15:34:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-benefits-of-this-solution.html</loc>
+      
+      <lastmod>2022-07-29T15:34:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-conclusion.html</loc>
+      
+      <lastmod>2022-07-29T15:34:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-flexible-storagegrid-features-for-splunk-smartstore.html</loc>
+      
+      <lastmod>2022-07-29T15:34:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-intelligent-tiering-and-cost-savings.html</loc>
+      
+      <lastmod>2022-07-29T15:34:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-introduction.html</loc>
+      
+      <lastmod>2022-07-29T15:34:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-single-site-smartstore-performance.html</loc>
+      
+      <lastmod>2022-07-29T19:34:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-solution-overview.html</loc>
+      
+      <lastmod>2022-07-29T15:34:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-splunk-architecture.html</loc>
+      
+      <lastmod>2022-07-29T19:34:53+00:00</lastmod>
       
     </url>
   
