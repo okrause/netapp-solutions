@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Native NFS Datastore Option in Azure</title>
+  <title>Supplemental NFS Datastore Option in Azure</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Native NFS Datastore Option in Azure" />
+  <meta property="og:title" content="Supplemental NFS Datastore Option in Azure" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-native-nfs-datastore-option.html" />
 	<meta property="og:description" content="" />
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/issues/new?body=Page%3A%20[Native NFS Datastore Option in Azure](https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-native-nfs-datastore-option.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/blob/main/ehc/azure/azure-native-nfs-datastore-option.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/netapp-solutions/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/issues/new?body=Page%3A%20[Supplemental NFS Datastore Option in Azure](https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-native-nfs-datastore-option.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/blob/main/ehc/azure/azure-native-nfs-datastore-option.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/netapp-solutions/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -4955,7 +4955,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/aws/aws-guest.html">
         Guest Connected storage for VMC
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/azure/azure-native-overview.html">
-        Native Datastore for AVS
+        Supplemental NFS Datastore for AVS
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/azure/azure-guest.html">
         Guest Connected storage for AVS
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/gcp/gcp-guest.html">
@@ -5039,9 +5039,9 @@
         <div class="na-navbar-padding"> Protecting Workloads</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/azure/azure-native-dr-jetstream.html">
-        Disaster Recovery with JetStream (native datastore)
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/azure/azure-guest-dr-jetstream.html">
-        Disaster Recovery with CVO and JetStream (guest connected storage)
+        Disaster Recovery with ANF and JetStream (supplemental NFS datastore)
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/azure/azure-guest-dr-cvo.html">
+        Disaster Recovery with ANF and CVO (guest connected storage)
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/azure/azure-regions.html">
         Region Support for NFS Datastores
       </a></li></ul></li><li class="subfolders "><a href="/us-en/netapp-solutions/ehc/gcp/index.html">
@@ -5338,14 +5338,14 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Native NFS Datastore Option in Azure</h1>
+  <h1 class="n-doc__component-detail-heading">Supplemental NFS Datastore Option in Azure</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-07-21 18:51:46 +0000">07/21/2022</time>
+    <time datetime="2022-08-12 23:00:32 +0000">08/12/2022</time>
     
   
 
@@ -5397,7 +5397,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>Azure NetApp Files also enables you to deploy multiple datastores,  which helps to mimic an on-premises deployment model by placing virtual machines in the appropriate datastore and by assigning the required service level to meet workload performance requirements. With the unique capability of multi-protocol support, guest storage is an additional option for database workloads like SQL and Oracle while also using native NFS datastore capability to house the remaining VMDKs.  Apart from this, native snapshot capability enables you to perform quick backup and granular restores.</p>
+<p>Azure NetApp Files also enables you to deploy multiple datastores,  which helps to mimic an on-premises deployment model by placing virtual machines in the appropriate datastore and by assigning the required service level to meet workload performance requirements. With the unique capability of multi-protocol support, guest storage is an additional option for database workloads like SQL and Oracle while also using supplemental NFS datastore capability to house the remaining VMDKs.  Apart from this, native snapshot capability enables you to perform quick backup and granular restores.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -5417,7 +5417,7 @@ Contact Azure and NetApp Solution Architects for planning and sizing of storage 
 <h2 id="detailed-architecture">Detailed architecture</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>From a high-level perspective, this architecture describes how to achieve hybrid-cloud connectivity and app portability across on-premises environments and Azure. It also describes using Azure NetApp Files as a native NFS datastore and as an in-guest storage option for guest virtual machines hosted on the Azure VMware solution.</p>
+<p>From a high-level perspective, this architecture describes how to achieve hybrid-cloud connectivity and app portability across on-premises environments and Azure. It also describes using Azure NetApp Files as a supplemental NFS datastore and as an in-guest storage option for guest virtual machines hosted on the Azure VMware solution.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/vmware-dr-image1.png" alt="Error: Missing Graphic Image"></span></p>
