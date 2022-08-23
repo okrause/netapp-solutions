@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Region Availability – NFS datastore for VMC</title>
+  <title>Region Availability – Supplemental NFS datastore for VMC</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Region Availability – NFS datastore for VMC" />
+  <meta property="og:title" content="Region Availability – Supplemental NFS datastore for VMC" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-regions.html" />
 	<meta property="og:description" content="" />
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/issues/new?body=Page%3A%20[Region Availability – NFS datastore for VMC](https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-regions.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/blob/main/ehc/aws/aws-regions.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/netapp-solutions/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/issues/new?body=Page%3A%20[Region Availability – Supplemental NFS datastore for VMC](https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-regions.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/netapp-solutions/blob/main/ehc/aws/aws-regions.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/netapp-solutions/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/netapp-solutions/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -5340,14 +5340,14 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Region Availability – NFS datastore for VMC</h1>
+  <h1 class="n-doc__component-detail-heading">Region Availability – Supplemental NFS datastore for VMC</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-06-07 17:27:22 +0000">06/07/2022</time>
+    <time datetime="2022-08-23 20:45:55 +0000">08/23/2022</time>
     
   
 
@@ -5366,19 +5366,23 @@
 </p>
 
 <div class="paragraph lead">
-<p>Learn more about the the Global Region support for AWS, VMC and FSx ONTAP.</p>
+<p>The availability of supplemental NFS datastores on AWS / VMC is defined by Amazon.  First, you need to determine if both VMC and FSxN are available in a specified region.  Next, you need to determine if the FSxN supplemental NFS datastore is supported in that region.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
-</td>
-<td class="content">
-NFS datastore will be available in regions where both services (VMC and FSx ONTAP) are available.
-</td>
-</tr>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p>Check the availability of VMC <a href="https:docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws.getting-started/GUID-19FB6A08-B1DA-4A6F-88A3-50ED445CFFCF.html">here</a>.</p>
+</li>
+<li>
+<p>Amazon&#8217;s pricing guide offers information on where FSxN (FSx ONTAP) is available. You can find that information <a href="https:aws.amazon.com/fsx/netapp-ontap/pricing/">here</a>.</p>
+</li>
+<li>
+<p>Availability of the FSxN supplemental NFS datastore for VMC is coming soon.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>While information is still being released, the following chart identifies the current support for VMC, FSxN and FSxN as a supplemental NFS datastore.</p>
 </div>
 <div class="exampleblock tabbed-block">
 <div class="content">

@@ -925,7 +925,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-regions.html</loc>
       
-      <lastmod>2022-06-07T17:27:22+00:00</lastmod>
+      <lastmod>2022-08-23T20:45:55+00:00</lastmod>
       
     </url>
   
@@ -1051,7 +1051,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-regions.html</loc>
       
-      <lastmod>2022-06-07T17:27:22+00:00</lastmod>
+      <lastmod>2022-08-23T20:45:55+00:00</lastmod>
       
     </url>
   
@@ -1317,14 +1317,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/change-log-display.html</loc>
       
-      <lastmod>2022-08-04T18:56:40+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
-      
-      <lastmod>2022-08-05T23:47:58+00:00</lastmod>
+      <lastmod>2022-08-23T20:45:55+00:00</lastmod>
       
     </url>
   
@@ -1590,7 +1583,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/ehc-regions.html</loc>
       
-      <lastmod>2022-07-21T18:51:46+00:00</lastmod>
+      <lastmod>2022-08-23T20:45:55+00:00</lastmod>
       
     </url>
   
@@ -1623,6 +1616,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/gcp-app-dr-sc-cvo-veeam.html</loc>
+      
+      <lastmod>2022-08-23T20:45:55+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/gcp-gcve.html</loc>
       
       <lastmod>2022-08-12T23:00:32+00:00</lastmod>
@@ -1646,7 +1646,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/gcp-regions.html</loc>
       
-      <lastmod>2022-06-07T17:27:22+00:00</lastmod>
+      <lastmod>2022-08-23T20:45:55+00:00</lastmod>
       
     </url>
   
@@ -3109,7 +3109,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-08-23T15:55:13+00:00</lastmod>
+      <lastmod>2022-08-23T20:46:09+00:00</lastmod>
       
     </url>
   
