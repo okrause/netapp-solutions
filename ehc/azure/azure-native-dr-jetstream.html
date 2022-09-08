@@ -8444,7 +8444,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-21 18:51:46 +0000">07/21/2022</time>
+    <time datetime="2022-09-08 17:32:52 +0000">09/08/2022</time>
     
   
 
@@ -8583,10 +8583,8 @@ The number and content of domains prescribed depend upon various VM characterist
 <div class="paragraph">
 <p>JetStream DR software consists of three major components: JetStream DR Management Server Virtual Appliance (MSA), DR Virtual Appliance (DRVA), and host components (I/O Filter packages). MSA is used to install and configure host components on the compute cluster and then to administer JetStream DR software. The following list provides a high-level description of the installation process:</p>
 </div>
-<div class="exampleblock">
-<div class="content">
 <details>
-<summary class="title">Details</summary>
+<summary class="title">How to install JetStream DR for on-premises</summary>
 <div class="content">
 <div class="olist arabic">
 <ol class="arabic">
@@ -8714,8 +8712,6 @@ Failover run books can be configured to group the VMs (called Recovery Group), s
 </details>
 </div>
 </div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="install-jetstream-dr-for-avs-in-an-azure-vmware-solution-private-cloud-using-the-run-command">Install JetStream DR for AVS in an Azure VMware Solution private cloud using the Run command</h2>
 <div class="sectionbody">
@@ -8750,10 +8746,8 @@ Network configuration including segment creation should be configured on the AVS
 <div class="paragraph">
 <p>Depending on the SLA and RTO requirements, continuous failover or regular (standard) failover mode can be used. For near-zero RTO, continuous rehydration should be started at the recovery site.</p>
 </div>
-<div class="exampleblock">
-<div class="content">
 <details>
-<summary class="title">Details</summary>
+<summary class="title">How to install JetStream DR for AVS in a private cloud</summary>
 <div class="content">
 <div class="paragraph">
 <p>To install JetStream DR for AVS on an Azure VMware Solution private cloud, complete the following steps:</p>
@@ -8841,15 +8835,11 @@ Make sure that DHCP is enabled on the selected segment and enough IPs are availa
 </details>
 </div>
 </div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="performing-failover-failback">Performing Failover / Failback</h2>
 <div class="sectionbody">
-<div class="exampleblock">
-<div class="content">
 <details>
-<summary class="title">Details</summary>
+<summary class="title">How to perform a Failover / Failback</summary>
 <div class="content">
 <div class="olist arabic">
 <ol class="arabic">
@@ -8952,28 +8942,17 @@ Specify the maximum delay after pausing VMs in the recovery site and restarting 
 </details>
 </div>
 </div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="ransomeware-recovery">Ransomeware Recovery</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Recovering from ransomware can be a daunting task. Specifically, it can be hard for IT organizations to determine the safe point of return and,  once determined, how to ensure that recovered workloads are safeguarded from the attacks reoccurring (from sleeping malware or through vulnerable applications).</p>
 </div>
-<div class="exampleblock">
-<div class="content">
-<details>
-<summary class="title">Details</summary>
-<div class="content">
 <div class="paragraph">
 <p>JetStream DR for AVS together with Azure NetApp Files datastores can address these concerns by allowing organizations to recover from available points in time, so that workloads are recovered to a functional, isolated network if required. Recovery allows applications to function and communicate with each other while not exposing them to north- south traffic, thereby giving security teams a safe place to perform forensics and other necessary remediation.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/vmware-dr-image23.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
-</div>
-</details>
-</div>
 </div>
 </div>
 </div>
