@@ -916,6 +916,20 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-nfs-datastore-option.html</loc>
+      
+      <lastmod>2022-09-14T21:19:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html</loc>
+      
+      <lastmod>2022-09-14T21:19:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native.html</loc>
       
       <lastmod>2022-08-12T23:00:32+00:00</lastmod>
@@ -1058,7 +1072,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-setup.html</loc>
       
-      <lastmod>2022-03-24T21:32:51+00:00</lastmod>
+      <lastmod>2022-09-14T21:19:28+00:00</lastmod>
       
     </url>
   
@@ -1317,7 +1331,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/change-log-display.html</loc>
       
-      <lastmod>2022-08-23T20:45:55+00:00</lastmod>
+      <lastmod>2022-09-14T21:19:28+00:00</lastmod>
       
     </url>
   
@@ -1604,7 +1618,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/ehc-support-configs.html</loc>
       
-      <lastmod>2022-08-12T23:00:32+00:00</lastmod>
+      <lastmod>2022-09-14T21:19:28+00:00</lastmod>
       
     </url>
   
@@ -3165,7 +3179,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-09-08T17:33:05+00:00</lastmod>
+      <lastmod>2022-09-14T21:19:41+00:00</lastmod>
       
     </url>
   
@@ -3264,6 +3278,13 @@
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/stgr-splunkss-splunk-architecture.html</loc>
       
       <lastmod>2022-07-29T19:34:53+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/template.html</loc>
+      
+      <lastmod>2022-09-14T21:19:28+00:00</lastmod>
       
     </url>
   
