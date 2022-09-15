@@ -8451,7 +8451,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-09-14 21:19:28 +0000">09/14/2022</time>
+    <time datetime="2022-09-15 20:10:53 +0000">09/15/2022</time>
     
   
 
@@ -8494,13 +8494,13 @@ Deploy FSx for ONTAP in the same Availably Zone as VMware Cloud on AWS SDDC.
 <img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
 </td>
 <td class="content">
-You cannot deploy FSx for ONTAP in the Connected VPC. Instead, you must deploy it in a new designated VPC and then connect the VPC to a VMware Managed Transit Gateway (vTGW) via SDDC groups.
+You cannot deploy FSx for ONTAP in the Connected VPC. Instead, you must deploy it in a new, designated VPC and then connect the VPC to a VMware Managed Transit Gateway (vTGW) via SDDC groups.
 </td>
 </tr>
 </table>
 </div>
 <details>
-<summary class="title">Step 1: Create Amazon FSx for ONTAP in a designated VPC</summary>
+<summary class="title">Step 1: Create Amazon FSx for ONTAP in a new, designated VPC</summary>
 <div class="content">
 <div class="paragraph">
 <p>To create and mount the Amazon FSx for NetApp ONTAP file system, complete the following steps:</p>
@@ -8524,6 +8524,18 @@ You cannot deploy FSx for ONTAP in the Connected VPC. Instead, you must deploy i
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/fsx-nfs-image4.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
+</td>
+<td class="content">
+The datastore sizes vary quite a bit from customer to customer. Although the recommended number of virtual machines per NFS datastore is subjective, many factors determine the optimum number of VMs that can be placed on each datastore. Although most administrators only consider capacity, the amount of concurrent I/O being sent to the VMDKs is one of the most important factors for overall performance. Use performance statistics from on-premises to size the datastore volumes accordingly.
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>In the <strong>Networking</strong> section for Virtual Private Cloud (VPC), choose the appropriate VPC and preferred subnets along with the route table. In this case, Demo- FSxforONTAP-VPC is selected from the dropdown menu.</p>
@@ -8534,7 +8546,7 @@ You cannot deploy FSx for ONTAP in the Connected VPC. Instead, you must deploy i
 <img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
 </td>
 <td class="content">
-Make sure this is a new designated VPC and not the connected VPC.
+Make sure this is a new, designated VPC and not the connected VPC.
 </td>
 </tr>
 </table>
@@ -8546,7 +8558,7 @@ Make sure this is a new designated VPC and not the connected VPC.
 <img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
 </td>
 <td class="content">
-By default, FSx for ONTAP uses <code>198.19.0.0/16</code> as the default endpoint IP address range for the file system. Make sure that the Endpoint IP address range does not conflict with the VMC on the AWS infrastructure. If you are unsure, use a non- overlapping range with no conflicts.
+By default, FSx for ONTAP uses 198.19.0.0/16 as the default endpoint IP address range for the file system. Make sure that the Endpoint IP address range does not conflict with the VMC on the AWS SDDC, associated VPC subnets and on-premises infrastructure. If you are unsure, use a non-overlapping range with no conflicts.
 </td>
 </tr>
 </table>
@@ -8580,7 +8592,7 @@ As of GA, four NFS datastores are supported.
 </div>
 </li>
 <li>
-<p>In the <strong>Default Volume Configuration</strong> section, specify the volume name and size required for datastore and click <strong>Next</strong>. This should be an NFSv3 volume. For <strong>Storage Efficiency</strong>, choose <strong>Enabled</strong> to turn on the ONTAP storage efficiency features (compression, deduplication, and compaction). After creation, use the shell to modify the volume parameters as follows:</p>
+<p>In the <strong>Default Volume Configuration</strong> section, specify the volume name and size required for datastore and click <strong>Next</strong>. This should be an NFSv3 volume. For <strong>Storage Efficiency</strong>, choose <strong>Enabled</strong> to turn on the ONTAP storage efficiency features (compression, deduplication, and compaction). After creation, use the shell to modify the volume parameters using <strong><em>volume modify</em></strong> as follows:</p>
 <table class="tableblock frame-all grid-all fit-content stretch">
 <colgroup>
 <col>
@@ -8594,24 +8606,24 @@ As of GA, four NFS datastores are supported.
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Volume guarantee</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">None (thin provisioned); Default setting is none</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Volume guarantee (Space Guarantee Style)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">None (thin provisioned) – set by default</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">fractional_reserve</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fractional_reserve (fractional-reserve)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0% – set by default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">snap_reserve (percent-snapshot-space)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0%</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">snap_reserve</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0%</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autosize</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">On</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autosize (autosize-mode)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">grow_shrink</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Storage efficiency</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enabled</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enabled – set by default</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Autodelete</p></td>
@@ -8619,7 +8631,7 @@ As of GA, four NFS datastores are supported.
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Volume Tiering Policy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Snapshot only</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Snapshot only – set by default</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">try_first</p></td>
@@ -8632,10 +8644,46 @@ As of GA, four NFS datastores are supported.
 </tbody>
 </table>
 <div class="paragraph">
+<p>Use the following SSH command to create and modify volumes:</p>
+</div>
+<div class="paragraph">
+<p><strong>Command to create new datastore volume from shell:</strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>volume create -vserver FSxONTAPDatastoreSVM -volume DemoDS002 -aggregate aggr1 -size 1024GB -state online -tiering-policy snapshot-only -percent-snapshot-space 0 -autosize-mode grow -snapshot-policy none -junction-path /DemoDS002</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> The volumes created via shell will take few minutes to show up in the AWS Console.</p>
+</div>
+<div class="paragraph">
+<p><strong>Command to modify volume parameters which are not set by default:</strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>volume modify -vserver FSxONTAPDatastoreSVM -volume DemoDS002 -fractional-reserve 0
+volume modify -vserver FSxONTAPDatastoreSVM -volume DemoDS002 -space-mgmt-try-first vol_grow
+volume modify -vserver FSxONTAPDatastoreSVM -volume DemoDS002 -autosize-mode grow</pre>
+</div>
+</div>
+<div class="paragraph">
 <p><span class="image"><img src="./../../media/fsx-nfs-image8.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/fsx-nfs-image9.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
+</td>
+<td class="content">
+During initial migration scenario, the default snapshot policy can cause datastore capacity full issues. To overcome it, modify the snapshot policy to suit the needs.
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
@@ -8656,7 +8704,7 @@ As of GA, four NFS datastores are supported.
 <img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
 </td>
 <td class="content">
-Repeat the previous steps to create more file systems and the datastore volumes according to the capacity and performance requirements.
+Repeat the previous steps to create more storage virtual machines or file systems and the datastore volumes according to the capacity and performance requirements.
 </td>
 </tr>
 </table>
@@ -8842,21 +8890,12 @@ This option may take a several minutes to appear.
 </div>
 </li>
 <li>
-<p>Verify that the security group in the associated VPC is updated with the correct inbound rules for the SDDC Group CIDR.</p>
+<p>Next step is to verify that the security group in the associated VPC is updated with the correct inbound rules for the SDDC Group CIDR.</p>
+</li>
+<li>
+<p>Update the inbound rule with the CIDR block of the SDDC infrastructure.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/fsx-nfs-image25.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/netapp-solutions/images/note.svg" alt="Note">
-</td>
-<td class="content">
-Update the inbound rule with the CIDR block of the SDDC infrastructure.
-</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -8886,7 +8925,7 @@ Update the security group to accept NFS traffic.
 </ol>
 </div>
 <div class="paragraph">
-<p>This is the final step in preparing the connectivity to the appropriate SDDC. With the file system configured, routes added, and security groups updated, it’s time to mount the datastores.</p>
+<p>This is the final step in preparing the connectivity to the appropriate SDDC. With the file system configured, routes added, and security groups updated, it’s time to mount the datastore(s).</p>
 </div>
 </div>
 </details>
