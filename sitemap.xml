@@ -986,6 +986,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-migrate-vmware-hcx.html</loc>
+      
+      <lastmod>2022-10-01T10:49:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-nfs-datastore-option.html</loc>
       
       <lastmod>2022-09-15T20:10:53+00:00</lastmod>
@@ -1016,7 +1023,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-solutions.html</loc>
       
-      <lastmod>2022-09-22T14:18:06+00:00</lastmod>
+      <lastmod>2022-10-01T10:49:23+00:00</lastmod>
       
     </url>
   
@@ -1105,6 +1112,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-migrate-vmware-hcx.html</loc>
+      
+      <lastmod>2022-10-01T10:49:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-native-dr-jetstream.html</loc>
       
       <lastmod>2022-09-08T17:32:52+00:00</lastmod>
@@ -1142,7 +1156,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-solutions.html</loc>
       
-      <lastmod>2022-09-22T14:18:06+00:00</lastmod>
+      <lastmod>2022-10-01T10:49:23+00:00</lastmod>
       
     </url>
   
@@ -2493,7 +2507,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/netapp-vmware.html</loc>
       
-      <lastmod>2022-05-20T22:19:14+00:00</lastmod>
+      <lastmod>2022-10-01T10:49:23+00:00</lastmod>
       
     </url>
   
@@ -3249,7 +3263,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-09-28T21:27:06+00:00</lastmod>
+      <lastmod>2022-10-01T10:49:34+00:00</lastmod>
       
     </url>
   
@@ -3375,7 +3389,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/videos.html</loc>
       
-      <lastmod>2022-09-22T14:18:06+00:00</lastmod>
+      <lastmod>2022-10-01T10:49:23+00:00</lastmod>
       
     </url>
   
@@ -3424,7 +3438,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_demos_videos.html</loc>
       
-      <lastmod>2022-06-07T17:27:22+00:00</lastmod>
+      <lastmod>2022-10-01T10:49:23+00:00</lastmod>
       
     </url>
   
