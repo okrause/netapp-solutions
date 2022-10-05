@@ -2246,6 +2246,13 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/kafka-ontap-overview.html</loc>
+      
+      <lastmod>2022-10-05T13:15:01+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/kafka-sc-conclusion.html</loc>
       
       <lastmod>2022-10-04T18:18:21+00:00</lastmod>
@@ -2254,13 +2261,6 @@
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/kafka-sc-confluent-performance-validation.html</loc>
-      
-      <lastmod>2022-10-04T18:18:21+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/kafka-sc-overview.html</loc>
       
       <lastmod>2022-10-04T18:18:21+00:00</lastmod>
       
@@ -2283,7 +2283,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/kafka-sc-solution.html</loc>
       
-      <lastmod>2022-10-04T18:18:21+00:00</lastmod>
+      <lastmod>2022-10-05T13:15:01+00:00</lastmod>
       
     </url>
   
@@ -3312,7 +3312,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2022-10-04T20:34:49+00:00</lastmod>
+      <lastmod>2022-10-05T13:20:59+00:00</lastmod>
       
     </url>
   
