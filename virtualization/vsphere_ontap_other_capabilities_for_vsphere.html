@@ -8713,11 +8713,19 @@
 <p class="page-details">
   
     
-    <time datetime="2021-09-20 18:45:52 +0000">09/20/2021</time>
+    <time datetime="2022-10-07 19:06:24 +0000">10/07/2022</time>
     
   
 
 <span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-bingen">
+    <img  class="avatar avatar-small"
+          alt="netapp-bingen"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/96140985?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
@@ -8756,7 +8764,7 @@
 <p>Space can be reclaimed for other uses when VMs are deleted from a datastore. When using NFS datastores, space is reclaimed immediately when a VM is deleted (of course, this approach only makes sense when the volume is thin provisioned,  that is, the volume guarantee is set to none). However, when files are deleted within the VM guest OS, space is not automatically reclaimed with an NFS datastore. For LUN-based VMFS datastores, ESXi as well as the guest OS can issue VAAI UNMAP primitives to the storage (again, when using thin provisioning) to reclaim space. Depending on the release, this support is either manual or automatic.</p>
 </div>
 <div class="paragraph">
-<p>In vSphere 5.5 and later, the <code>vmkfstools –y</code> command is replaced by the <code>esxcli storage vmfs unmap</code> command, which specifies the number of free blocks (see VMware KB <a href="https://kb.vmware.com/s/article/2057513" target="_blank" rel="noopener">2057513</a> for more info). In vSphere 6.5 and later when using VMFS 6, space should be automatically reclaimed asynchronously (see <a href="https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.storage.doc/GUID-B40D1420-26FD-4318-8A72-FA29C9A395C2.html" target="_blank" rel="noopener">Storage Space Reclamation</a> in the vSphere documentation), but can also be run manually if needed. This automatic UNMAP is supported by ONTAP, and ONTAP tools for VMware vSphere sets it to low priority.</p>
+<p>In vSphere 5.5 and later, the <code>vmkfstools –y</code> command is replaced by the <code>esxcli storage vmfs unmap</code> command, which specifies the number of free blocks (see VMware KB <a href="https://kb.vmware.com/s/article/2057513" target="_blank" rel="noopener">2057513</a> for more info). In vSphere 6.5 and later when using VMFS 6, space should be automatically reclaimed asynchronously (see <a href="https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.storage.doc/GUID-B40D1420-26FD-4318-8A72-FA29C9A395C2.html" target="_blank" rel="noopener">Storage Space Reclamation</a> in the vSphere documentation), but can also be run manually if needed. This automatic UNMAP is supported by ONTAP, and ONTAP tools for VMware vSphere sets it to low priority. Keep in mind that, when provisioning a LUN for usage as a VMFS datastore, you must manually enable the space-allocation option on the LUN. When using ONTAP tools for VMware vSphere, the LUN is automatically configured to support space reclaimation and no further actions are required. See <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider/Devices_backing_volume_do_not_support_UNMAP" target="_blank" rel="noopener">this</a> knowledge base article for more details.</p>
 </div>
 </div>
 </div>
